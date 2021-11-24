@@ -1,4 +1,4 @@
-<nav id="header-simple" class="navbar navbar-expand-lg navbar-dark">
+<nav id="header-simple" class="navbar navbar-expand-lg navbar-light bg-white">
 
 	<div class="container">
 
@@ -26,13 +26,13 @@
 					'container'         => '',
 					'container_class'   => '',
 					'container_id'      => '',
-					'menu_class'        => 'header-menu nav navbar-nav my-3 my-lg-0 ms-lg-2 me-auto',
+					'menu_class'        => 'header-menu nav navbar-nav my-3 my-lg-0 ms-lg-2 me-auto header_menu_wrapper',
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				)
 			);
 
-			get_search_form();
+			//get_search_form();
 
 			if ( class_exists( 'ACF' ) ) {
 				get_template_part( 'templates/components/socialicons', '' );

@@ -4,3 +4,7 @@
  * Custom user functions.
  * You can put here your custom code.
  */
+function appendMenus()
+{
+
+}
