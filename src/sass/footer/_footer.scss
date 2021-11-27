@@ -4,3 +4,78 @@
     max-height: 40px;
   }
 }
+
+.main_footer_wrapper {
+  background-color: #f8f9fb !important;
+  padding-top: 50px;
+  color: black;
+}
+
+.footer_social_holder {
+  padding-bottom: 1.1%;
+  border-bottom: 1px solid lightgray;
+}
+
+.footer_holder {
+  width: 100%;
+}
+
+.footer-social-icons {
+  display: inline-block;
+  //margin-left: 41px;
+}
+
+ul.social-media-icons-sections li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-media-icons-sections {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-social-icons .social-media-icons-sections li:first-of-type::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 50px;
+  //border-right: 1px solid #cacaca;
+  position: absolute;
+  left: 20%;
+  top: -12px;
+}
+
+.footer_holder ul a {
+  color: #232323;
+  text-decoration: none;
+  background-color: transparent;
+}
+.fnt-1-2{
+  font-size: 1.2rem;
+}
+.btn-subscribe{
+  background-color: #9d9d9c;
+  border-color: #9d9d9c;
+  border-radius: 0!important;
+  color: white;
+}
+.address{
+  color: black;
+  padding-top: 9px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.btn-subscribe:hover{
+  color:black;
+}
+#brk-signature{
+  padding:3px;
+}
+#footer-copyright{
+  background-color: #363636;
+}
+//.footer_container{
+//  width: 80%;
+//  margin:auto;
+//}

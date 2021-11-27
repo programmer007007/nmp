@@ -9,4 +9,5 @@ import './integrations/bootstrap'; // integrates some bootstrap classes into wor
 // --- Custom components ---
 
 import './components/backtotop';
-import './header/headerscroll';
+//import './header/headerscroll';
+import './customs/myscripts';

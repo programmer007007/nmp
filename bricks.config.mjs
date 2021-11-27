@@ -59,7 +59,7 @@ const config = {
   },
 
   img: {
-    src: './src/img/**/*.{png,jpg,gif,svg}',
+    src: './src/img/**/*.{png,jpg,gif,svg,webp}',
     dist: './dist/img/',
     watch: './src/img/**/*.{png,jpg,gif,svg}'
   },

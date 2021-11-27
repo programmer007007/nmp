@@ -37,9 +37,53 @@ html {
     object-fit: cover;
   }
 }
-.m-10{
-  margin:10px;
+
+.m-10 {
+  margin: 10px;
 }
-a.top_menu:hover{
-  color:unset;
+
+a.top_menu:hover {
+  color: unset;
+}
+
+.optima {
+  font-family: 'Optima', sans-serif;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Optima', sans-serif;
+}
+
+.heading_bottom {
+  font-weight: 700;
+  border-bottom: 3px solid #0064ac;
+  padding-bottom: 10px;
+}
+
+.border-0 {
+  border: 0;
+}
+
+.outline-0 {
+  outline: 0;
+}
+
+.section-tagline {
+  color: #525658;
+  font-weight: 700;
+  display: flex;
+  font-family: Lato, sans-serif;
+}
+.section-tagline:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 204px;
+  background-color: #9d9d9c;
+  margin-top: 23px;
+  margin-left: 22px;
 }

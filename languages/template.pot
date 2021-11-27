@@ -49,34 +49,6 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: index.php:21
-msgid "Results for: "
-msgstr ""
-
-#: index.php:44
-msgid "&laquo; Previous"
-msgstr ""
-
-#: index.php:45
-msgid "Next &raquo;"
-msgstr ""
-
-#: searchform.php:3
-msgid "Search"
-msgstr ""
-
-#: functions/navmenus.php:13
-msgid "Header Menu"
-msgstr ""
-
-#: functions/navmenus.php:14
-msgid "Footer Menu"
-msgstr ""
-
-#: functions/sidebars.php:13, functions/sidebars.php:15
-msgid "Main Sidebar"
-msgstr ""
-
 #: functions/integrations/acf.php:25, functions/integrations/acf.php:29, templates/footer/footer-columns.php:23
 msgid "Contacts"
 msgstr ""
@@ -159,6 +131,34 @@ msgstr ""
 
 #: functions/lib/class-wp-bootstrap-navwalker.php:366, functions/lib/class-wp-bootstrap-navwalker.php:366
 msgid "Add a menu"
+msgstr ""
+
+#: functions/navmenus.php:13
+msgid "Header Menu"
+msgstr ""
+
+#: functions/navmenus.php:14
+msgid "Footer Menu"
+msgstr ""
+
+#: functions/sidebars.php:13, functions/sidebars.php:15
+msgid "Main Sidebar"
+msgstr ""
+
+#: index.php:21
+msgid "Results for: "
+msgstr ""
+
+#: index.php:44
+msgid "&laquo; Previous"
+msgstr ""
+
+#: index.php:45
+msgid "Next &raquo;"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search"
 msgstr ""
 
 #: templates/content/loop-none.php:10
