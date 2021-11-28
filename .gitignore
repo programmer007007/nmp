@@ -5,12 +5,3 @@
 
 # Visual Studio Code
 .vscode
-
-# NPM
-node_modules
-
-# Composer
-vendor
-
-# Compiled
-dist
