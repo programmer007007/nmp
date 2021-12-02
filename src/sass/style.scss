@@ -39,6 +39,9 @@
 @import 'templates/comments';
 @import 'templates/floating_contact';
 @import 'templates/about_us';
+@import 'templates/single_project';
+
+@import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
 
 @import url('//fonts.cdnfonts.com/css/optima');
 @import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500&display=swap');
@@ -50,6 +53,7 @@ body {
 .optima {
   font-family: 'Optima', sans-serif;
 }
+
 .opensan {
   font-family: 'Open Sans', sans-serif;
 }
@@ -94,15 +98,21 @@ body {
   line-height: 1.6;
   font-weight: 500;
 }
-.about_bg{
+
+.about_bg {
   background-color: #efefef;
 }
-.postion-abs{
+
+.postion-abs {
   position: absolute;
 }
-.postion-rel{
+
+.postion-rel {
   position: relative;
 }
+
+
+
 @media only screen and (min-width: 1441px) {
 }
 
@@ -126,19 +136,21 @@ body {
   .front-page-about-us .about_us_wrapper {
     width: 90%;
   }
-  .hide_tab{
+  .hide_tab {
     display: none;
   }
-  .width_tab_100{
-   width: 100%;
+  .width_tab_100 {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .width_tab_100{
+  .width_tab_100 {
     width: unset;
   }
-  .hide_tab{display: block;}
+  .hide_tab {
+    display: block;
+  }
   .first_message_holder {
     top: 18%;
   }

@@ -13,6 +13,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
 @import url("//fonts.cdnfonts.com/css/optima");
 @import url("//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500&display=swap");
 :root {
@@ -11584,6 +11585,23 @@ li.menu-item a:focus::after {
   transform: translate3d(0, 0, 0);
 }
 
+#header-simple-menu .active {
+  background-color: #071c35;
+}
+
+#header-simple-menu .active a {
+  color: white;
+}
+
+li.menu-item .active a::after {
+  transition: unset;
+}
+
+.display-4 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 425px) {
   .top_sub_menu_wrp {
     font-size: 0.8rem;
@@ -11836,16 +11854,14 @@ ul.social-media-icons-sections li {
   padding-bottom: 3%;
 }
 
-.about_us_heading {
+.about_us_heading, .who_we_are_heading {
   margin-bottom: 2%;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .about_us_container {
   margin: auto;
-}
-
-.about_us_heading {
-  font-size: 3rem;
 }
 
 #section-about-us {
@@ -11872,10 +11888,61 @@ ul.social-media-icons-sections li {
   margin-top: -19%;
 }
 
+.who_we_are_bg {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
 .about_us_space {
   line-height: 33px;
 }
 
+#section-who-we-are .icon_holder img {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-us-page .about_us_container {
+  width: 80%;
+  padding-top: 4%;
+}
+.about-us-page .about_building {
+  width: 100%;
+  margin-top: 11%;
+}
+
+.common_page_wrapper {
+  padding: 0;
+}
+
+#section-who-we-are {
+  padding-top: 4%;
+  width: 95%;
+  margin: auto;
+}
+
+.font-12rem {
+  font-size: 1.2rem;
+}
+
+.who_are_are_txt_holder p {
+  padding: 1%;
+}
+
+.whoweare_img {
+  margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-us-page .about_building {
+    width: 100%;
+    margin-top: 11%;
+  }
+}
 @media only screen and (max-width: 425px) {
   .about_us_heading {
     font-size: 1.8rem;
@@ -11896,6 +11963,31 @@ ul.social-media-icons-sections li {
 }
 /* Iphone 5/6/7 */
 /* Iphone 4/5 */
+.section-single-project {
+  margin-top: 2%;
+  border: 1px solid lightgray;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.proj_img {
+  width: 50%;
+}
+
+.proj_img img {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  border: 1px solid lightgrey;
+}
+
+.project_title {
+  background-color: #cfcfcf;
+  padding: 2%;
+  font-family: inherit;
+  margin-bottom: 3%;
+}
+
 /* purgecss end ignore */
 .optima {
   font-family: "Optima", sans-serif;

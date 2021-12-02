@@ -1,25 +1,29 @@
-.front-page-about-us .about_us_wrapper{
+.front-page-about-us .about_us_wrapper {
   width: 80%;
   margin: auto;
 }
-.front-page-about-us{
+
+.front-page-about-us {
   padding-top: 6%;
   padding-bottom: 3%;
 }
-.about_us_heading{
-  margin-bottom:2%;
+
+.about_us_heading, .who_we_are_heading {
+  margin-bottom: 2%;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
-.about_us_container{
+
+.about_us_container {
   //width: 73%;
   margin: auto;
 }
-.about_us_heading{
-  font-size: 3rem;
-}
-#section-about-us{
+
+#section-about-us {
   background-color: #efefef;
 }
-.read_more_btn{
+
+.read_more_btn {
   color: white;
   display: inline;
   background: #c29f6c;
@@ -30,17 +34,64 @@
   padding-right: 10px;
   padding-bottom: 5px;
 }
-.read_more_btn:hover{
-  color:white;
+
+.read_more_btn:hover {
+  color: white;
 }
+
 .about_building {
   margin-top: -19%;
 }
 
-.about_us_space{
+.who_we_are_bg {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.about_us_space {
   line-height: 33px;
 }
-#section-slider .first_message_holder{
+
+#section-who-we-are .icon_holder img {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-us-page {
+  .about_us_container {
+    width: 80%;
+    padding-top: 4%;
+  }
+
+  .about_building {
+    width: 100%;
+    margin-top: 11%;
+  }
+}
+
+.common_page_wrapper {
+  padding: 0;
+}
+#section-who-we-are{
+  padding-top: 4%;
+  width: 95%;
+  margin: auto;
+}
+.font-12rem{
+  font-size:1.2rem;
+}
+.who_are_are_txt_holder p{
+  padding: 1%;
+  //margin-bottom: 5%;
+}
+.whoweare_img {
+  margin-bottom: 4%;
+}
+#section-slider .first_message_holder {
 
 }
 
@@ -51,6 +102,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .about-us-page {
+    .about_building {
+      width: 100%;
+      margin-top: 11%;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {

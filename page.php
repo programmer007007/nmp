@@ -13,7 +13,7 @@
 		}
 		?>
 
-		<div class="container">
+		<div class="container-fluid common_page_wrapper">
 
 			<?php
 
