@@ -87,3 +87,15 @@ h1, h2, h3, h4, h5 {
   margin-top: 23px;
   margin-left: 22px;
 }
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+.col-green{
+  color: green;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

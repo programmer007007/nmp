@@ -8,7 +8,9 @@
             "homepage": "https://www.stefanobartoletti.it"
         }
     ],
-    "require": {},
+    "require": {
+        "voku/stringy": "^6.4"
+    },
     "require-dev": {
         "wp-coding-standards/wpcs": "^2.3",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"

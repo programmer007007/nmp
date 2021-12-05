@@ -3,6 +3,7 @@ import lightGallery from 'lightgallery';
 // Plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
+import validate from 'jquery-validation/dist/jquery.validate.min';
 
 $(document).ready(function ($) {
     function addStyle(styles) {
@@ -30,7 +31,74 @@ $(document).ready(function ($) {
     lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgZoom, lgThumbnail],
         speed: 500,
+        licenseKey: '1234-1234-123-1234'
     });
+
+    var ajaxCall = function (type, data, callback) {
+        jQuery.ajax({
+            type: type,
+            url: window.ajaxurl,
+            dataType: 'JSON',
+            data: data,
+            success: function (res) {
+                callback(res);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    }
+    // Contact Form Submit
+    let successElement = $('#form-message-success');
+    let warningElement = $('#form-message-warning');
+    let contactFormElement = $("#contactForm");
+    warningElement.hide();
+    successElement.hide();
+    var contactForm = function () {
+        if (contactFormElement.length > 0) {
+            contactFormElement.validate({
+                rules: {
+                    name: "required",
+                    subject: "required",
+                    phone: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true,
+                        minlength: 5
+                    }
+                },
+                messages: {
+                    name: "Please enter your name",
+                    subject: "Please enter your subject",
+                    phone: "Please enter your phone number",
+                    email: "Please enter a valid email address",
+                    message: "Please enter a message"
+                },
+                /* submit via ajax */
+
+                submitHandler: function (form) {
+                    debugger;
+                    var $submit = $('.submitting'),
+                        waitText = 'Submitting...';
+                    ajaxCall("POST", $(form).serialize(), function (response) {
+                        if (response.status === true) {
+                            successElement.html(response.msg);
+                            successElement.show();
+                            contactFormElement.trigger("reset");
+                        } else {
+                            warningElement.html(response.msg);
+                            warningElement.show();
+                        }
+                    });
+                }
+            });
+        }
+    };
+    contactForm();
+
 });
 
 

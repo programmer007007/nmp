@@ -1,5 +1,6 @@
 <?php
 
+require 'vendor/autoload.php';
 /**
  *  https://developer.wordpress.org/themes/basics/theme-functions/
  */

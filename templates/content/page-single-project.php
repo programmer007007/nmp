@@ -1,6 +1,16 @@
 <div class="section-single-project">
-    <h2 class="text-decoration-underline project_title"><?php the_title(); ?></h2>
+    <a class="a_project_title"
+       href="<?php echo get_permalink(get_the_ID()); ?>"><h2
+                class="project_title"><span
+                    class="<?php echo is_front_page() ? '' : '' ?>"><?php the_title(); ?></span></h2></a>
     <h4 class="project_sub_title"><?php echo get_post_meta(get_the_ID(), "tag_line")[0]; ?></h4>
+
+    <?php
+    $google_map_data = get_post_meta(get_the_ID(), 'google_map_link')[0];
+    if (Stringy\Stringy::create($google_map_data)->contains('maps/embed')) {
+        echo "<div class='map_holder'><iframe src='" . $google_map_data . "'  style='width:100%;' height='450' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>";
+    }
+    ?>
     <p><?php
         $content = get_post_meta(get_the_ID(), "project_description")[0];
         if (is_front_page()) {
@@ -10,7 +20,7 @@
         }
         ?></p>
     <div class="slider_holder">
-        <h4 class="text-uppercase">Plot Images</h4>
+        <h4 class="topic_holder">Plot Images</h4>
         <div id="lightgallery" class="row">
             <?php
             $project_images = get_posts(array(
@@ -20,13 +30,29 @@
             ));
             ?>
             <?php foreach ($project_images as $item) { ?>
-                <a class="col-md-6 col-12 proj_img" href="<?php echo $item->guid; ?>" data-lg-size="1600-2400">
+                <a class="col-md-3 col-12 proj_img" href=" <?php echo $item->guid; ?>">
                     <img src="<?php echo $item->guid; ?>"/>
                 </a>
             <?php } ?>
 
         </div>
 
+    </div>
+    <div class="benefits_holder">
+        <h4 class="topic_holder">Benefits</h4>
+        <div class="row">
+            <?php
+            $term_list = get_the_terms(get_the_ID(), 'project_benefit');
+            //var_dump($term_list);
+            foreach ($term_list as $term_single) {
+                ?>
+                <div class="col-xl-3 col-md-4 col-12">
+                    <div class="benefit_txt"><i class="far fa-star col-green"></i>&nbsp;<?php echo Stringy\Stringy::create(html_entity_decode($term_single->name))->toTitleCase(); ?></div>
+                </div>
+                <?php
+            }
+            ?>
+        </div>
     </div>
 </div>
 <?php

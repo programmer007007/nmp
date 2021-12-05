@@ -11477,6 +11477,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   margin-left: 22px;
 }
 
+.blink_me {
+  -webkit-animation: blinker 1s linear infinite;
+  animation: blinker 1s linear infinite;
+}
+
+.col-green {
+  color: green;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 #backtotop {
   position: fixed;
   right: 25px;
@@ -11971,7 +11991,15 @@ ul.social-media-icons-sections li {
 }
 
 .proj_img {
-  width: 50%;
+  padding: 1%;
+}
+
+.a_project_title {
+  color: #2a2929;
+}
+
+.a_project_title:hover {
+  color: #242f56;
 }
 
 .proj_img img {
@@ -11988,6 +12016,82 @@ ul.social-media-icons-sections li {
   margin-bottom: 3%;
 }
 
+.benefit_txt {
+  padding: 2%;
+  border: 1px solid lightgray;
+  height: 9vh;
+  margin: 1%;
+}
+
+.topic_holder {
+  background-color: #e7e5e382;
+  padding: 1%;
+  text-transform: uppercase;
+}
+
+.single-project .section-single-project {
+  padding: 1%;
+}
+
+.single-project .section-single-project a.a_project_title h2, .single-project .section-single-project a.a_project_title .h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Optima";
+  background-color: unset;
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 425px) {
+  .single-project .section-single-project a.a_project_title h2, .single-project .section-single-project a.a_project_title .h2 {
+    font-size: 2.3rem;
+  }
+
+  #lightgallery {
+    padding: 2%;
+  }
+}
+/* Iphone 5/6/7 */
+/* Iphone 4/5 */
+.section-contact-us .left_bg {
+  background-color: #e9e9e9;
+}
+.section-contact-us .right_bg {
+  background-color: #e9e9e9;
+}
+.section-contact-us .dbox .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #2553b8;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.section-contact-us .dbox .text {
+  width: 100%;
+}
+.section-contact-us .dbox .icon svg {
+  font-size: 20px;
+  color: #fff;
+}
+.section-contact-us label.error {
+  padding: 2px;
+  width: 100%;
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+  font-weight: bold;
+}
+.section-contact-us .form-control {
+  font-size: 1.2rem;
+}
+.section-contact-us input.btn-primary {
+  color: white;
+  width: 157px;
+  padding: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 /* purgecss end ignore */
 .optima {
   font-family: "Optima", sans-serif;
@@ -12002,7 +12106,7 @@ ul.social-media-icons-sections li {
   margin-top: -35%;
   width: 100%;
   margin: 0 auto;
-  top: 43%;
+  top: 6%;
   color: white;
   z-index: 2;
 }

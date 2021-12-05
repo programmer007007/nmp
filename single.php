@@ -13,9 +13,9 @@
 
 		<div class="row py-5">
 
-			<div id="article-wrapper" class="col">       
+			<div id="article-wrapper">
 
-				<?php get_template_part( 'templates/content/single', '' ); ?>
+				<?php get_template_part( 'templates/content/page', 'single-project' ); ?>
 
 				<nav class="nav">
 					<?php

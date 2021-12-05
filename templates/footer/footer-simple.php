@@ -1,3 +1,7 @@
+<?php $pods_settings = pods('website_settings'); ?>
+<script>
+    window.ajaxurl = '<?php echo admin_url('admin-ajax.php');?>';
+</script>
 <div id="footer-simple" class="navbar navbar-expand navbar-dark">
     <div class="container flex-column flex-md-row my-3">
         <div class="footer_holder">
@@ -35,7 +39,7 @@
             </div>
             <div class="row">
                 <div class="address text-center">
-                    Off No: 1402, G-Square, Opp. Sanpada Railway Station, Sector 30A, Vashi, Navi Mumbai
+                   <?php echo $pods_settings->display('address');?>
                 </div>
             </div>
             <div class="row">
