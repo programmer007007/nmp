@@ -11,3 +11,4 @@ import './integrations/bootstrap'; // integrates some bootstrap classes into wor
 import './components/backtotop';
 //import './header/headerscroll';
 import './customs/myscripts';
+import './customs/fixed-form';

@@ -39,27 +39,52 @@
             </div>
             <div class="row">
                 <div class="address text-center">
-                   <?php echo $pods_settings->display('address');?>
+                    <?php echo $pods_settings->display('address'); ?>
                 </div>
             </div>
             <div class="row">
                 <?php
-//                wp_nav_menu(
-//                    array(
-//                        'theme_location' => 'footer',
-//                        'depth' => 1,
-//                        'container' => 'nav',
-//                        'container_class' => 'mt-5 mt-md-0 ms-md-auto',
-//                        'container_id' => '',
-//                        'menu_class' => 'footer-menu navbar-nav',
-//                        'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-//                        'walker' => new WP_Bootstrap_Navwalker(),
-//                    )
-//                );
+                //                wp_nav_menu(
+                //                    array(
+                //                        'theme_location' => 'footer',
+                //                        'depth' => 1,
+                //                        'container' => 'nav',
+                //                        'container_class' => 'mt-5 mt-md-0 ms-md-auto',
+                //                        'container_id' => '',
+                //                        'menu_class' => 'footer-menu navbar-nav',
+                //                        'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                //                        'walker' => new WP_Bootstrap_Navwalker(),
+                //                    )
+                //                );
 
                 ?>
             </div>
         </div>
     </div>
 
-</div> <!-- #footer-simple --> 
+</div> <!-- #footer-simple -->
+<div class="floating-form" id="contact_form">
+    <div class="contact-opener">Enquiry</div>
+    <div class="floating-form-heading">Please Contact Us</div>
+    <div id="contact_results"></div>
+    <div id="contact_body">
+        <label class="w-100"><span>Name <span class="required">*</span></span>
+            <input type="text" name="name" id="name" required="true" class="form-control input-field">
+        </label>
+        <label class="w-100"><span>Email <span class="required">*</span></span>
+            <input type="email" name="email" required="true" class="form-control input-field">
+        </label>
+        <label class="w-100"><span>Phone <span class="required">*</span></span>
+            <input type="text" name="phone1" maxlength="13" placeholder="+91" required="true"
+                   class="form-control tel-number-field">
+        </label>
+        <label class="w-100" for="field5"><span>Message <span class="required">*</span></span>
+            <textarea name="message" id="message" class="form-control textarea-field" required="true"></textarea>
+        </label>
+        <label class="w-100">
+            <input type="submit" id="floating_enq_submit" class="btn btn-primary" value="Submit">
+        </label>
+    </div>
+</div>
+
+

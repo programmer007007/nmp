@@ -5,9 +5,7 @@
 				Copyright 2021-<?php echo date("Y"); ?> | Build & Maintained By PJ
 			</a>
 		</span>
-
     </div>
-
 </div> <!-- #footer-copyright --> 
 
 

@@ -70,13 +70,6 @@ $(document).ready(function ($) {
                         minlength: 5
                     }
                 },
-                messages: {
-                    name: "Please enter your name",
-                    subject: "Please enter your subject",
-                    phone: "Please enter your phone number",
-                    email: "Please enter a valid email address",
-                    message: "Please enter a message"
-                },
                 /* submit via ajax */
 
                 submitHandler: function (form) {
