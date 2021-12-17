@@ -3,7 +3,7 @@ const config = {
   // --- Project variables ---
 
   textdomain: 'bricks',
-  siteURL: 'http://localhost',
+  siteURL: 'http://emaar.test/',
 
   enable: {
     purgecss: true
