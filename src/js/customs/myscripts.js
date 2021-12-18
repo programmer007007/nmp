@@ -17,17 +17,17 @@ $(document).ready(function ($) {
     }
 
     let screenWidth = $(window).width();
-    if ($("#v").length) {
-        let video_height = document.getElementById("v").offsetHeight;
-        let m_top1 = document.getElementById("main_first_top").offsetHeight;
-        let m_top2 = document.getElementById("header-wrapper").offsetHeight;
-        let start_from = m_top1 + m_top2;
-        // if (screenWidth >= 426) {
-        //     video_height = video_height - 10;
-        // }
-        var styles = '.video_overlay:after {height: ' + video_height + 'px;top:' + start_from + 'px;}';
-        addStyle(styles);
-    }
+    // if ($("#v").length) {
+    //     let video_height = document.getElementById("v").offsetHeight;
+    //     let m_top1 = document.getElementById("main_first_top").offsetHeight;
+    //     let m_top2 = document.getElementById("header-wrapper").offsetHeight;
+    //     let start_from = m_top1 + m_top2;
+    //     // if (screenWidth >= 426) {
+    //     //     video_height = video_height - 10;
+    //     // }
+    //     var styles = '.video_overlay:after {height: ' + video_height + 'px;top:' + start_from + 'px;}';
+    //     addStyle(styles);
+    // }
     lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgZoom, lgThumbnail],
         speed: 500,
