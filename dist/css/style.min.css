@@ -12753,23 +12753,47 @@ ul.social-media-icons-sections li {
 }
 /* Iphone 5/6/7 */
 /* Iphone 4/5 */
+#article-wrapper {
+  padding: 0;
+}
+
 .section-single-project {
-  margin-top: 2%;
-  border: 1px solid lightgray;
-  padding-top: 1%;
   padding-bottom: 1%;
+}
+
+.pt_holder {
+  background: url("../img/home-banner-bg.jpg") no-repeat center center;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .proj_img {
   padding: 1%;
 }
 
+.single_content_holder {
+  width: 80%;
+  margin: auto;
+}
+
 .a_project_title {
   color: #2a2929;
+  text-shadow: 2px 2px #b9b3b3;
+}
+
+.mt_single_holder {
+  display: inline-block;
+  padding-top: 2%;
 }
 
 .a_project_title:hover {
   color: #242f56;
+}
+
+.map_holder {
+  width: 40%;
+  padding: 1%;
+  margin-right: 3%;
 }
 
 .proj_img img {
@@ -12782,8 +12806,8 @@ ul.social-media-icons-sections li {
 .project_title {
   background-color: #cfcfcf;
   padding: 2%;
-  font-family: inherit;
-  margin-bottom: 3%;
+  padding-bottom: 3%;
+  margin: 0;
 }
 
 .benefit_txt {
@@ -12797,10 +12821,6 @@ ul.social-media-icons-sections li {
   background-color: #e7e5e382;
   padding: 1%;
   text-transform: uppercase;
-}
-
-.single-project .section-single-project {
-  padding: 1%;
 }
 
 .single-project .section-single-project a.a_project_title h2, .single-project .section-single-project a.a_project_title .h2 {
@@ -12885,6 +12905,10 @@ ul.social-media-icons-sections li {
 }
 
 /* purgecss end ignore */
+body {
+  background: #f9f9f9;
+}
+
 .optima {
   font-family: "Optima", sans-serif;
 }
@@ -12935,10 +12959,6 @@ ul.social-media-icons-sections li {
   letter-spacing: 1px;
   line-height: 1.6;
   font-weight: 500;
-}
-
-.about_bg {
-  background-color: #efefef;
 }
 
 .postion-abs {

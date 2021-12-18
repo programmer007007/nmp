@@ -7,11 +7,11 @@
 		the_post();
 		?>
 	
-	<div class="container">
+	<div class="container-fluid">
 
 		<?php brk_breadcrumbs(); ?>
 
-		<div class="row py-5">
+		<div class="row">
 
 			<div id="article-wrapper">
 

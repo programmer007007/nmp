@@ -1,5 +1,5 @@
 <?php $pods_settings = pods('website_settings'); ?>
-<section id="section-slider" class="about_bg">
+<section id="section-slider">
     <div class="m_slider_wrp">
     <div class="d-flex" id="video_holder">
         <video id="v" autoplay="" muted="" loop="" playsinline="" width="100%" poster="">
