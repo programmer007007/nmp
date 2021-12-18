@@ -1,0 +1,25 @@
+#section-welcome{
+  .welcome_wrapper{
+    .welcome_container{
+      width: 80%;
+      margin: auto;
+      margin-top: 5%;
+      padding-bottom: 5%;
+    }
+    .welcome_content_holder{
+      padding:2%;
+      padding-left: 10%;
+    }
+    .cmp_name{
+      color: #a6855c;
+    }
+    .welcome_txt{
+      font-size: 3rem;
+    }
+    .welcome_dy_txt_holder{
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      padding-top: 3%;
+    }
+  }
+}

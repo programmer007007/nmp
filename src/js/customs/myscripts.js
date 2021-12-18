@@ -1,11 +1,33 @@
 import $ from "jquery";
 import lightGallery from 'lightgallery';
+// core version + navigation, pagination modules:
+import Swiper from 'swiper/bundle';
+
 // Plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import validate from 'jquery-validation/dist/jquery.validate.min';
 
 $(document).ready(function ($) {
+    //HTML SCSS JSResult Skip Results Iframe
+    var swiper = new Swiper(".swiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
     function addStyle(styles) {
         var css = document.createElement('style');
         css.type = 'text/css';
