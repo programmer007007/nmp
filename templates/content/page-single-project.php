@@ -25,13 +25,14 @@
             echo "<div class='map_holder float-start'><iframe src='" . $google_map_data . "'  style='width:100%;' height='450' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>";
         }
         ?>
-        <p><?php
+        <p class="content_single_holder"><?php
             $content = get_post_meta(get_the_ID(), "project_description")[0];
-            if (is_front_page()) {
-                echo limitText($content, 1000, get_permalink(get_the_ID()), true);
-            } else {
-                echo $content;
-            }
+            echo $content;
+//            if (is_front_page()) {
+//                echo limitText($content, 1000, get_permalink(get_the_ID()), true);
+//            } else {
+//
+//            }
             ?></p>
         <div class="slider_holder">
             <h4 class="topic_holder">Plot Images</h4>

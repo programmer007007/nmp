@@ -1,7 +1,7 @@
 <?php $pods_settings = pods('website_settings'); ?>
 <section id="section-properties"
          class="properties <?php is_front_page() ? 'front_page_property' : 'list_properties' ?>">
-    <h3 class="text-center properties"><span class="heading_bottom">Plots</span></h3>
+    <h3 class="text-center properties"><span class="heading_bottom">LATEST LAUNCHES</span></h3>
     <div class="container">
         <div class="row">
             <?php

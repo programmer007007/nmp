@@ -12373,6 +12373,10 @@ li.menu-item .active a::after {
     margin-right: 13px;
     width: 143px;
   }
+
+  #header-wrapper .custom-logo {
+    height: 50px;
+  }
 }
 /* Iphone 5/6/7 */
 /* Iphone 4/5 */
@@ -12750,6 +12754,14 @@ ul.social-media-icons-sections li {
     width: 87%;
     float: right;
   }
+
+  #section-who-we-are {
+    padding-top: 20%;
+  }
+
+  .about_us_heading, .who_we_are_heading {
+    font-size: 2rem;
+  }
 }
 /* Iphone 5/6/7 */
 /* Iphone 4/5 */
@@ -12821,6 +12833,24 @@ ul.social-media-icons-sections li {
   background-color: #e7e5e382;
   padding: 1%;
   text-transform: uppercase;
+}
+
+.mt_single_holder p img {
+  width: 20%;
+  height: auto;
+}
+
+.pr-5 {
+  padding-right: 5%;
+}
+
+.pl-5 {
+  padding-left: 5%;
+}
+
+.mt_single_holder a {
+  color: blue;
+  text-decoration: underline;
 }
 
 .single-project .section-single-project a.a_project_title h2, .single-project .section-single-project a.a_project_title .h2 {
@@ -12904,6 +12934,22 @@ ul.social-media-icons-sections li {
   padding-top: 3%;
 }
 
+@media only screen and (max-width: 425px) {
+  #section-welcome .welcome_wrapper .welcome_txt {
+    font-size: 2rem;
+  }
+  #section-welcome .welcome_wrapper .welcome_content_holder {
+    padding: 2%;
+    padding-top: 18% !important;
+  }
+  #section-welcome .welcome_dy_txt_holder {
+    font-size: 1rem !important;
+    line-height: 2.2rem !important;
+    padding-top: 3% !important;
+  }
+}
+/* Iphone 5/6/7 */
+/* Iphone 4/5 */
 .mpl_wrapper .pt_holder .project_title {
   background-color: unset;
   text-align: center;

@@ -66,7 +66,20 @@
 .single-project .section-single-project {
   //padding: 1%;
 }
-
+.mt_single_holder p img{
+  width: 20%;
+  height: auto;
+}
+.pr-5{
+  padding-right: 5%;
+}
+.pl-5{
+  padding-left: 5%;
+}
+.mt_single_holder a{
+  color:blue;
+  text-decoration: underline;
+}
 .single-project .section-single-project a.a_project_title h2 {
   text-align: center;
   font-size: 3rem;

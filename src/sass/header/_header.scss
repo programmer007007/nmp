@@ -104,17 +104,20 @@ li.menu-item a:focus::after {
 #header-simple-menu .active {
   background-color: #071c35;
 }
-#header-simple-menu .active a{
+
+#header-simple-menu .active a {
   color: white;
 }
 
-li.menu-item .active a::after  {
+li.menu-item .active a::after {
   transition: unset;
 }
-.display-4{
+
+.display-4 {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 @media only screen and (min-width: 1441px) {
 }
 
@@ -140,6 +143,9 @@ li.menu-item .active a::after  {
     color: #232323;
     margin-right: 13px;
     width: 143px;
+  }
+  #header-wrapper .custom-logo {
+    height: 50px;
   }
 }
 
