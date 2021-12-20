@@ -10,8 +10,9 @@
     .project_sub_title {
       width: 45%;
       margin: auto;
-      font-size: 18px;
       font-weight: 400;
+      font-size: 1.3rem;
+      color: lightseagreen;
     }
 
     #tg_cmp_name {
@@ -30,7 +31,8 @@
     text-align: center;
     height: 50vh;
   }
-  .htxt{
+
+  .htxt {
     font-size: 10rem;
     color: white;
     position: absolute;
@@ -38,6 +40,7 @@
     left: 15%;
     letter-spacing: 27px;
   }
+
   .location_lnk_wrp {
     line-height: 50vh;
     font-size: 3rem;
@@ -127,7 +130,13 @@
 }
 
 @media only screen and (max-width: 425px) {
-
+  .map_holder {
+    display: block;
+    width: 100%;
+  }
+  .mt_single_holder p img{
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 414px) and (max-height: 736px) {

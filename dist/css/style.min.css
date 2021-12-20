@@ -12861,6 +12861,11 @@ ul.social-media-icons-sections li {
   text-decoration: none !important;
 }
 
+#section-properties {
+  width: 80%;
+  margin: auto;
+}
+
 @media only screen and (max-width: 425px) {
   .single-project .section-single-project a.a_project_title h2, .single-project .section-single-project a.a_project_title .h2 {
     font-size: 2.3rem;
@@ -12959,8 +12964,9 @@ ul.social-media-icons-sections li {
 .mpl_wrapper .pt_holder .project_sub_title {
   width: 45%;
   margin: auto;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 1.3rem;
+  color: lightseagreen;
 }
 .mpl_wrapper .pt_holder #tg_cmp_name {
   display: inline;
@@ -13042,6 +13048,16 @@ ul.social-media-icons-sections li {
 
   .mpl_wrapper .pt_holder .project_sub_title {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .map_holder {
+    display: block;
+    width: 100%;
+  }
+
+  .mt_single_holder p img {
+    width: 100% !important;
   }
 }
 /* Iphone 5/6/7 */
