@@ -48,6 +48,8 @@
 @import 'templates/single_project';
 @import 'templates/contactus';
 @import 'templates/welcome';
+@import "templates/mpl";
+
 
 @import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
 
@@ -131,6 +133,8 @@ body {
   color: white;
   background-color: black;
 }
+
+
 .swiper-button-next:after, .swiper-button-prev:after {font-size: 1rem;}
 @media only screen and (min-width: 1441px) {
 }

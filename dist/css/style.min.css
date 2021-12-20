@@ -12764,7 +12764,8 @@ ul.social-media-icons-sections li {
 .pt_holder {
   background: url("../img/home-banner-bg.jpg") no-repeat center center;
   padding-top: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 6%;
+  background-size: cover !important;
 }
 
 .proj_img {
@@ -12778,7 +12779,6 @@ ul.social-media-icons-sections li {
 
 .a_project_title {
   color: #2a2929;
-  text-shadow: 2px 2px #b9b3b3;
 }
 
 .mt_single_holder {
@@ -12806,7 +12806,7 @@ ul.social-media-icons-sections li {
 .project_title {
   background-color: #cfcfcf;
   padding: 2%;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
   margin: 0;
 }
 
@@ -12904,6 +12904,102 @@ ul.social-media-icons-sections li {
   padding-top: 3%;
 }
 
+.mpl_wrapper .pt_holder .project_title {
+  background-color: unset;
+  text-align: center;
+  font-size: 3rem;
+  background-size: cover !important;
+}
+.mpl_wrapper .pt_holder .project_sub_title {
+  width: 45%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 400;
+}
+.mpl_wrapper .pt_holder #tg_cmp_name {
+  display: inline;
+}
+.mpl_wrapper .pt_holder #tg_hd {
+  color: #a6855c;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.mpl_wrapper .location_holder {
+  border: 1px solid lightgray;
+  text-align: center;
+  height: 50vh;
+}
+.mpl_wrapper .htxt {
+  font-size: 10rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 15%;
+  letter-spacing: 27px;
+}
+.mpl_wrapper .location_lnk_wrp {
+  line-height: 50vh;
+  font-size: 3rem;
+  font-family: "Optima";
+  font-weight: bold;
+  padding: 2%;
+  display: block;
+}
+.mpl_wrapper .black-overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  z-index: 10;
+  opacity: 0.5;
+}
+.mpl_wrapper .black-overlay:hover {
+  opacity: 0.9;
+  background-color: unset;
+}
+.mpl_wrapper .show_over {
+  display: block;
+  width: 45%;
+  background-color: #000000cf;
+  color: white;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  position: absolute;
+  /* border: 2px solid #706f6f; */
+  padding: 5%;
+}
+.mpl_wrapper .ov_wrp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #40403fba;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s, visibility 0.2s;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.mpl_wrapper .mt_Wrp {
+  border: 1px solid lightgray;
+}
+
+@media only screen and (max-width: 768px) {
+  .mpl_wrapper .location_holder {
+    height: 30vh;
+  }
+
+  .mpl_wrapper .pt_holder .project_sub_title {
+    width: 80%;
+  }
+}
+/* Iphone 5/6/7 */
+/* Iphone 4/5 */
 /* purgecss end ignore */
 body {
   background: #f9f9f9;

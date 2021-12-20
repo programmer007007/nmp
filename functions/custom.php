@@ -76,3 +76,7 @@ function record_leads()
     echo json_encode(array('status' => true, "msg" => __("Your message was sent. We will get back to you shortly.", 'bricks'), 'color' => 'info', 'header' => "Info"));
     wp_die();
 }
+
+function wrap_imp_word($word,$tag,$id,$content){
+    return str_ireplace($word,"<".$tag." id='$id'>".$word."</$tag>",$content);
+}
