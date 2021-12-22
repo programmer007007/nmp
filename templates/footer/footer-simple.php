@@ -71,18 +71,18 @@
         <label class="w-100"><span>Name <span class="required">*</span></span>
             <input type="text" name="name" id="name" required="true" class="form-control input-field">
         </label>
-        <label class="w-100"><span>Email <span class="required">*</span></span>
-            <input type="email" name="email" required="true" class="form-control input-field">
-        </label>
         <label class="w-100"><span>Phone <span class="required">*</span></span>
             <input type="text" name="phone1" maxlength="13" placeholder="+91" required="true"
                    class="form-control tel-number-field">
         </label>
+        <label class="w-100"><span>Email <span class="required"></span></span>
+            <input type="email" name="email" required="true" class="form-control input-field">
+        </label>
         <label class="w-100" for="field5"><span>Message <span class="required">*</span></span>
-            <textarea name="message" id="message" class="form-control textarea-field" required="true"></textarea>
+            <textarea name="message" rows="5" id="message" class="form-control textarea-field" required="true"></textarea>
         </label>
         <label class="w-100">
-            <input type="submit" id="floating_enq_submit" class="btn btn-primary" value="Submit">
+            <input type="button" id="floating_enq_submit" class="btn btn-primary" value="Submit">
         </label>
     </div>
 </div>

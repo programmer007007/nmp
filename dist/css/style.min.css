@@ -12866,6 +12866,10 @@ ul.social-media-icons-sections li {
   margin: auto;
 }
 
+.a_project_title h2, .a_project_title .h2 {
+  font-size: 2.5rem;
+}
+
 @media only screen and (max-width: 425px) {
   .single-project .section-single-project a.a_project_title h2, .single-project .section-single-project a.a_project_title .h2 {
     font-size: 2.3rem;
@@ -12958,7 +12962,7 @@ ul.social-media-icons-sections li {
 .mpl_wrapper .pt_holder .project_title {
   background-color: unset;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   background-size: cover !important;
 }
 .mpl_wrapper .pt_holder .project_sub_title {
@@ -13021,6 +13025,9 @@ ul.social-media-icons-sections li {
   position: absolute;
   /* border: 2px solid #706f6f; */
   padding: 5%;
+}
+.mpl_wrapper .a_project_title h2, .mpl_wrapper .a_project_title .h2 {
+  font-size: 2.5rem;
 }
 .mpl_wrapper .ov_wrp {
   position: absolute;

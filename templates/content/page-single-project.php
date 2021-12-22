@@ -17,7 +17,7 @@
         </div>
     <?php } ?>
 
-    <div class="<?php !is_front_page() ? 'single_content_holder' : '' ?>">
+    <div class="<?php is_single() ? 'single_content_holder' : '' ?>">
         <div class="mt_single_holder">
             <?php
             $google_map_data = get_post_meta(get_the_ID(), 'google_map_link')[0];
@@ -25,7 +25,7 @@
                 echo "<div class='map_holder float-start'><iframe src='" . $google_map_data . "'  style='width:100%;' height='450' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>";
             }
             ?>
-            <p class="content_single_holder"><?php
+            <div class="content_single_holder clearfix"><?php
                 $content = get_post_meta(get_the_ID(), "project_description")[0];
                 echo $content;
                 //            if (is_front_page()) {
@@ -33,8 +33,8 @@
                 //            } else {
                 //
                 //            }
-                ?></p>
-            <div class="slider_holder">
+                ?></div>
+            <div class="slider_holder d-block">
                 <h4 class="topic_holder">Plot Images</h4>
                 <div id="lightgallery" class="row">
                     <?php

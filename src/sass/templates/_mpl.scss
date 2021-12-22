@@ -3,7 +3,7 @@
     .project_title {
       background-color: unset;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.5rem;
       background-size: cover !important;
     }
 
@@ -82,7 +82,9 @@
     /* border: 2px solid #706f6f; */
     padding: 5%;
   }
-
+  .a_project_title h2{
+    font-size: 2.5rem;
+  }
   .ov_wrp {
     position: absolute;
     top: 0;
@@ -134,7 +136,7 @@
     display: block;
     width: 100%;
   }
-  .mt_single_holder p img{
+  .mt_single_holder p img {
     width: 100% !important;
   }
 }

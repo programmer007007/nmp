@@ -114,6 +114,9 @@ $(document).ready(function ($) {
     };
     contactForm();
 
+    $("floating_enq_submit").click(function () {
+        alert("hi");
+    })
 });
 
 
