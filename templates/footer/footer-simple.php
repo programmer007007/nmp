@@ -68,11 +68,17 @@
     <div class="floating-form-heading">Please Contact Us</div>
     <div id="contact_results"></div>
     <div id="contact_body">
+        <div id="form-message-warning" class="alert alert-warning mb-4" role="alert">
+        </div>
+        <div id="form-message-success" class="alert alert-success mb-4" role="alert">
+        </div>
+        <form method="POST" id="floatingcontactForm" name="floatingcontactForm" class="floatingContactForm">
+            <input type="hidden" name="action" value="floating_contact_leads">
         <label class="w-100"><span>Name <span class="required">*</span></span>
             <input type="text" name="name" id="name" required="true" class="form-control input-field">
         </label>
         <label class="w-100"><span>Phone <span class="required">*</span></span>
-            <input type="text" name="phone1" maxlength="13" placeholder="+91" required="true"
+            <input type="text" name="phone" maxlength="13" placeholder="" required="true"
                    class="form-control tel-number-field">
         </label>
         <label class="w-100"><span>Email <span class="required"></span></span>
@@ -82,8 +88,9 @@
             <textarea name="message" rows="5" id="message" class="form-control textarea-field" required="true"></textarea>
         </label>
         <label class="w-100">
-            <input type="button" id="floating_enq_submit" class="btn btn-primary" value="Submit">
+            <input type="submit" id="floating_enq_submit" class="btn btn-primary" value="Submit">
         </label>
+        </form>
     </div>
 </div>
 

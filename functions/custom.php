@@ -5,6 +5,7 @@
  * You can put here your custom code.
  */
 
+$glb_pods_settings = pods('website_settings');
 
 function limitText($string, $characters, $full_path, $newline = false, $displayText = "Read More")
 {
@@ -56,7 +57,10 @@ function record_leads()
     $name = trim($wpdb->_real_escape($_REQUEST["name"]));
     $email = trim($wpdb->_real_escape($_REQUEST["email"]));
     $phone = trim($wpdb->_real_escape($_REQUEST["phone"]));
-    $subject = trim($wpdb->_real_escape($_REQUEST["subject"]));
+    $subject = null;
+    if (isset($_REQUEST["subject"])) {
+        $subject = trim($wpdb->_real_escape($_REQUEST["subject"]));
+    }
     $message = trim($wpdb->_real_escape($_REQUEST["message"]));
     $messagePost = array(
         'post_title' => $name,
@@ -70,13 +74,52 @@ function record_leads()
     update_post_meta($post_id, "client_name", $name);
     update_post_meta($post_id, "phone", $phone);
     update_post_meta($post_id, "email_address", $email);
-    update_post_meta($post_id, "subject", $subject);
+    if ($subject) {
+        update_post_meta($post_id, "subject", $subject);
+    }
     update_post_meta($post_id, "message", $message);
     update_post_meta($post_id, "staff_status", "Interested");
+    global $glb_pods_settings;
+    $email_to = $glb_pods_settings->display("forward_leads_to_email_address");
+    if (!empty($email_to)) {
+        $messageData["name"] = $_REQUEST["name"];
+        $messageData["email"] = $_REQUEST["email"];
+        $messageData["phone"] = $_REQUEST["phone"];
+        if (isset($_REQUEST["subject"])) {
+            $messageData["subject"] = $_REQUEST["subject"];
+        }
+        $messageData["message"] = $_REQUEST["message"];
+        mail($email_to, "Lead Generated | Website ", messageBuilder($messageData));
+    }
     echo json_encode(array('status' => true, "msg" => __("Your message was sent. We will get back to you shortly.", 'bricks'), 'color' => 'info', 'header' => "Info"));
     wp_die();
 }
 
-function wrap_imp_word($word,$tag,$id,$content){
-    return str_ireplace($word,"<".$tag." id='$id'>".$word."</$tag>",$content);
+
+// save contact us form
+add_action('wp_ajax_floating_contact_leads', 'record_leads');
+add_action('wp_ajax_nopriv_floating_contact_leads', 'record_leads');
+
+function messageBuilder($messageData)
+{
+    $html = "Hello ,<br>";
+    if (isset($messageData)) {
+        if (isset($messageData['name']))
+            $html .= "Name : " . $messageData['name'] . ".<br>";
+        if (isset($messageData['email']))
+            $html .= "Email : " . $messageData['email'] . ".<br>";
+        if (isset($messageData['phone']))
+            $html .= "Phone : " . $messageData['phone'] . ".<br>";
+        if (isset($messageData['subject']))
+            $html .= "Subject : " . $messageData['subject'] . ".<br>";
+        if (isset($messageData['message']))
+            $html .= "Message : " . $messageData['message'] . ".<br>";
+    }
+    $html .= "By<br> Website. <br>Thanks";
+    return $html;
+}
+
+function wrap_imp_word($word, $tag, $id, $content)
+{
+    return str_ireplace($word, "<" . $tag . " id='$id'>" . $word . "</$tag>", $content);
 }

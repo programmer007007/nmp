@@ -3,6 +3,8 @@ import lightGallery from 'lightgallery';
 // core version + navigation, pagination modules:
 import Swiper from 'swiper/bundle';
 
+window.jQuery = $;
+window.$ = $;
 // Plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
@@ -82,7 +84,12 @@ $(document).ready(function ($) {
                 rules: {
                     name: "required",
                     subject: "required",
-                    phone: "required",
+                    phone: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 10,
+                        number:true
+                    },
                     email: {
                         required: true,
                         email: true
@@ -95,7 +102,6 @@ $(document).ready(function ($) {
                 /* submit via ajax */
 
                 submitHandler: function (form) {
-                    debugger;
                     var $submit = $('.submitting'),
                         waitText = 'Submitting...';
                     ajaxCall("POST", $(form).serialize(), function (response) {
@@ -113,10 +119,47 @@ $(document).ready(function ($) {
         }
     };
     contactForm();
+    let floatingContactFormElement = $("#floatingcontactForm");
+    var floatingContactForm = function () {
+        if (floatingContactFormElement.length > 0) {
+            floatingContactFormElement.validate({
+                rules: {
+                    name: "required",
+                    phone: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 10,
+                        number:true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true,
+                        minlength: 5
+                    }
+                },
+                /* submit via ajax */
 
-    $("floating_enq_submit").click(function () {
-        alert("hi");
-    })
+                submitHandler: function (form) {
+                    var $submit = $('.submitting'),
+                        waitText = 'Submitting...';
+                    ajaxCall("POST", $(form).serialize(), function (response) {
+                        if (response.status === true) {
+                            successElement.html(response.msg);
+                            successElement.show();
+                            floatingContactFormElement.trigger("reset");
+                        } else {
+                            warningElement.html(response.msg);
+                            warningElement.show();
+                        }
+                    });
+                }
+            });
+        }
+    };
+    floatingContactForm();
 });
 
 
