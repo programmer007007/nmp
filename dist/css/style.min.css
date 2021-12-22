@@ -12869,6 +12869,9 @@ ul.social-media-icons-sections li {
 .a_project_title h2, .a_project_title .h2 {
   font-size: 2.5rem;
 }
+strong.highlight {
+  font-size: 1.2rem;
+}
 
 @media only screen and (max-width: 425px) {
   .single-project .section-single-project a.a_project_title h2, .single-project .section-single-project a.a_project_title .h2 {
