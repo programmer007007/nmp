@@ -8,15 +8,19 @@
 
             <div class="video_overlay"></div>
         </div>
+        <?php
+        $mainTitle = $pods_settings->display('page_video_main_title');
+        $subTitle = $pods_settings->display('page_video_under_title');
+        if(!empty($mainTitle) || !empty($subTitle)){
+        ?>
         <div class="first_message_holder">
-            <h2 class="playfair text-center f1"> Find your dream property</h2>
-            <h4 class="opensan text-center f2">The strong and resilient property market in Dubai demands
-                professionalism,
-                knowledge, and commitment. At D&B
-                Properties, we have proven track record of excelling in all of them. Over the years, we have been
-                catering
-                to
-                this rapidly growing property market by capturing opportunities efficiently.</h4>
+            <?php if(!empty($mainTitle)){ ?>
+            <h2 class="playfair text-center f1"><?php echo $mainTitle;?></h2>
+            <?php } ?>
+            <?php if(!empty($subTitle)){ ?>
+            <h4 class="opensan text-center f2"><?php echo $subTitle;?></h4>
+            <?php } ?>
         </div>
+        <?php } ?>
     </div>
 </section>
