@@ -12839,14 +12839,28 @@ ul.social-media-icons-sections li {
 .benefit_txt {
   padding: 2%;
   border: 1px solid lightgray;
-  height: 9vh;
+  height: 11vh;
   margin: 1%;
+  border-radius: 16px;
 }
 
 .topic_holder {
   background-color: #e7e5e382;
   padding: 1%;
   text-transform: uppercase;
+}
+
+.benefit_txt {
+  padding-left: 2%;
+  font-size: 0.9rem;
+}
+
+.benefit_txt_under {
+  padding-left: 2%;
+}
+
+strong.highlight:before {
+  border: 1px solid lightgrey;
 }
 
 .mt_single_holder p img {
@@ -12893,7 +12907,6 @@ ul.social-media-icons-sections li {
   padding: 10px;
   margin-bottom: 20px;
   transition: max-height 0.15s ease-out;
-  background-image: linear-gradient(to bottom, transparent, #9b959517);
 }
 
 .home .section-single-project {
@@ -12901,6 +12914,12 @@ ul.social-media-icons-sections li {
   padding-top: 3%;
   margin-top: 2%;
   padding-left: 3%;
+}
+
+strong.highlight {
+  font-size: 1.3rem;
+  font-family: math;
+  font-weight: 900;
 }
 
 .readmore.expand {

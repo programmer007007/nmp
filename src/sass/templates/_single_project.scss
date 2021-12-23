@@ -75,14 +75,26 @@
 .benefit_txt {
   padding: 2%;
   border: 1px solid lightgray;
-  height: 9vh;
+  height: 11vh;
   margin: 1%;
+  border-radius: 16px;
 }
 
 .topic_holder {
   background-color: #e7e5e382;
   padding: 1%;
   text-transform: uppercase;
+}
+
+.benefit_txt {
+  padding-left: 2%;
+  font-size: 0.9rem;
+}
+.benefit_txt_under{
+  padding-left: 2%;
+}
+strong.highlight:before{
+    border:1px solid lightgrey;
 }
 
 .single-project .section-single-project {
@@ -133,9 +145,9 @@
   padding: 10px;
   margin-bottom: 20px;
   transition: max-height 0.15s ease-out;
-  background-image: linear-gradient(to bottom, transparent, #9b959517);
 }
-.home{
+
+.home {
   .section-single-project {
     border: 1px solid lightgray;
     padding-top: 3%;
@@ -143,6 +155,13 @@
     padding-left: 3%;
   }
 }
+
+strong.highlight {
+  font-size: 1.3rem;
+  font-family: math;
+  font-weight: 900;
+}
+
 .readmore.expand {
   max-height: 5500px !important;
   transition: max-height 0.35s ease-in-out;

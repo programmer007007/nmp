@@ -36,22 +36,24 @@
                 ?></div>
             <?php
             $project_images = get_post_meta(get_the_ID(), 'project_images');
-            if(count($project_images)){
-            ?>
-            <div class="slider_holder d-block">
-                <h4 class="topic_holder">Plot Images</h4>
-                <div id="lightgallery" class="row">
+            if (count($project_images)) {
+                ?>
+                <div class="slider_holder d-block">
+                    <h4 class="topic_holder">Plot Images</h4>
+                    <div id="lightgallery" class="row">
 
-                    <?php foreach ($project_images as $item) { if(isset($item['guid'])){ ?>
-                        <a class="col-md-3 col-12 proj_img" href="<?php echo $item['guid']; ?>">
-                            <img src="<?php echo $item['guid']; ?>"/>
-                        </a>
-                    <?php }} ?>
+                        <?php foreach ($project_images as $item) {
+                            if (isset($item['guid'])) { ?>
+                                <a class="col-md-3 col-12 proj_img" href="<?php echo $item['guid']; ?>">
+                                    <img src="<?php echo $item['guid']; ?>"/>
+                                </a>
+                            <?php }
+                        } ?>
+                    </div>
                 </div>
-            </div>
             <?php }
             $term_list = get_the_terms(get_the_ID(), 'project_benefit');
-            if(count($term_list)){
+            if (count($term_list)){
             ?>
             <div class="benefits_holder">
                 <h4 class="topic_holder">Benefits</h4>
@@ -65,7 +67,7 @@
                             <div class="benefit_txt row-eq-height">
                                 <div class="d-flex"><i class="far fa-check-circle"
                                                        style="font-size: 2rem;"></i>
-                                    &nbsp;<?php echo Stringy\Stringy::create(html_entity_decode($term_single->name))->toTitleCase(); ?>
+                                    <div class="benefit_txt_under"><?php echo Stringy\Stringy::create(html_entity_decode($term_single->name))->toTitleCase(); ?></div>
                                 </div>
                             </div>
                         </div>
