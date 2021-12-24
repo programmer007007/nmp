@@ -49,21 +49,25 @@
 @import 'templates/contactus';
 @import 'templates/welcome';
 @import "templates/mpl";
+@import "templates/blog";
 
 
 @import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
 
 @import url('//fonts.cdnfonts.com/css/optima');
 @import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 /* purgecss end ignore */
 body {
-  background: #f9f9f9;
+  //background: #f9f9f9;
 }
 
 .optima {
   font-family: 'Optima', sans-serif;
 }
-
+.basker{
+  font-family: 'Baskervville', serif;
+}
 .opensan {
   font-family: 'Open Sans', sans-serif;
 }

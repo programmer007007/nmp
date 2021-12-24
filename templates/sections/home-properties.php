@@ -1,8 +1,7 @@
 <?php $pods_settings = pods('website_settings'); ?>
-<section id="section-properties"
-         class="properties <?php is_front_page() ? 'front_page_property' : 'list_properties' ?>">
+<section id="section-properties" class="properties <?php is_front_page() ? 'front_page_property' : 'list_properties' ?>">
     <h3 class="properties"><span class="heading_bottom">LATEST LAUNCHES</span></h3>
-    <div class="row my-4">
+    <div class="row m-0 my-4">
         <?php
         $query = new WP_Query(array(
             'post_type' => 'project',

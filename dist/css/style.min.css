@@ -16,6 +16,7 @@
 @import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
 @import url("//fonts.cdnfonts.com/css/optima");
 @import url("//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -12890,7 +12891,7 @@ strong.highlight:before {
   text-decoration: none !important;
 }
 
-#section-properties {
+#section-properties, #section-blogs {
   width: 80%;
   margin: auto;
 }
@@ -13176,13 +13177,111 @@ strong.highlight {
 }
 /* Iphone 5/6/7 */
 /* Iphone 4/5 */
-/* purgecss end ignore */
-body {
-  background: #f9f9f9;
+.wrp_blog {
+  position: relative;
+  border: 1px solid lightsteelblue;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #071c35;
+  color: white;
+  overflow: hidden;
+  width: 100%;
+  transition: 0.5s ease;
+  cursor: pointer;
+  height: 33%;
+  padding: 5%;
+  font-size: 1rem;
+}
+
+#section-blogs {
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.blogs {
+  margin-bottom: 4%;
+}
+
+.blog_written_by_holder {
+  font-size: 1rem;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.wrp_blog a {
+  color: white;
+}
+
+.m_wrp_blog_holder {
+  margin-top: 4%;
+}
+
+.pt_holder_blog {
+  width: 80%;
+  margin: auto;
+  border: 1px solid lightgray;
+  padding: 2%;
+  font-family: "Baskervville";
+}
+
+.section-single-blog {
+  padding-top: 3%;
+}
+.section-single-blog .blog_content {
+  padding-top: 3%;
+}
+
+#comments-wrapper, nav.nav {
+  width: 80%;
+  margin: auto;
+}
+
+.comment-form-comment {
+  max-width: 100%;
+}
+
+.blog_featured_img_holder img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 3%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#comment {
+  border: 1px solid lightgray;
+  margin-top: 0.5%;
+}
+
+#article-wrapper .nav-link {
+  border: 1px solid lightgrey;
+  border-top: 0;
+  background-color: #000000d9;
+}
+
+#page-wrapper {
+  margin-bottom: 5%;
+}
+
+/* purgecss end ignore */
 .optima {
   font-family: "Optima", sans-serif;
+}
+
+.basker {
+  font-family: "Baskervville", serif;
 }
 
 .opensan {
