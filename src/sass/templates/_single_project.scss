@@ -234,6 +234,10 @@ strong.highlight {
   .project_sub_title{
     font-size: 1.3rem;
   }
+  #section-properties,#section-blogs,#section-welcome .welcome_wrapper .welcome_container {
+    width: 90% !important;
+  }
+
 }
 
 @media only screen and (max-width: 414px) and (max-height: 736px) {
