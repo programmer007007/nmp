@@ -160,6 +160,40 @@ $(document).ready(function ($) {
         }
     };
     floatingContactForm();
+    let successSubscriberElement = $('#form-message-subcriber-success');
+    let warningSubscriberElement = $('#form-message-subcriber-warning');
+    warningSubscriberElement.hide();
+    successSubscriberElement.hide();
+    let subscriberFormElement = $("#subcribeForm");
+    var subcribeMainForm = function () {
+        if (subscriberFormElement.length > 0) {
+            subscriberFormElement.validate({
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                },
+                /* submit via ajax */
+
+                submitHandler: function (form) {
+                    var $submit = $('.submitting'),
+                        waitText = 'Submitting...';
+                    ajaxCall("POST", $(form).serialize(), function (response) {
+                        if (response.status === true) {
+                            successSubscriberElement.html(response.msg);
+                            successSubscriberElement.show();
+                            subscriberFormElement.trigger("reset");
+                        } else {
+                            warningSubscriberElement.html(response.msg);
+                            warningSubscriberElement.show();
+                        }
+                    });
+                }
+            });
+        }
+    };
+    subcribeMainForm();
 
     $(".readmore-link").click( function(e) {
         // record if our text is expanded

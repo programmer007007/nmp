@@ -12,7 +12,7 @@
       margin: auto;
       font-weight: 400;
       font-size: 1.3rem;
-      color: lightseagreen;
+      color: #323434;
     }
 
     #tg_cmp_name {
@@ -82,9 +82,11 @@
     /* border: 2px solid #706f6f; */
     padding: 5%;
   }
-  .a_project_title h2{
+
+  .a_project_title h2 {
     font-size: 2.5rem;
   }
+
   .ov_wrp {
     position: absolute;
     top: 0;
@@ -104,7 +106,11 @@
   .mt_Wrp {
     border: 1px solid lightgray;
   }
+}
 
+.single_page_project_content {
+  width: 90%;
+  margin: auto;
 }
 
 @media only screen and (min-width: 1441px) {

@@ -119,6 +119,19 @@ function messageBuilder($messageData)
     return $html;
 }
 
+add_action('wp_ajax_subscribe', 'store_subscriber');
+add_action('wp_ajax_nopriv_subscribe', 'store_subscriber');
+function store_subscriber()
+{
+    $fields = array(
+        'email' => $_REQUEST["email"],
+    );
+    pods('subscriber')->add($fields);
+    echo json_encode(array('status' => true, "msg" => __("Your have been subscribed to our list.", 'bricks'), 'color' => 'info', 'header' => "Info"));
+    wp_die();
+}
+
+
 function wrap_imp_word($word, $tag, $id, $content)
 {
     return str_ireplace($word, "<" . $tag . " id='$id'>" . $word . "</$tag>", $content);

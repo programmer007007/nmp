@@ -1,2 +1,2 @@
 <?php
-echo "deool";
+get_template_part('templates/taxonomy/list', 'taxo');

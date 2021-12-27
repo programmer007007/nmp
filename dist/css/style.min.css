@@ -13078,7 +13078,7 @@ strong.highlight {
   margin: auto;
   font-weight: 400;
   font-size: 1.3rem;
-  color: lightseagreen;
+  color: #323434;
 }
 .mpl_wrapper .pt_holder #tg_cmp_name {
   display: inline;
@@ -13154,6 +13154,11 @@ strong.highlight {
 }
 .mpl_wrapper .mt_Wrp {
   border: 1px solid lightgray;
+}
+
+.single_page_project_content {
+  width: 90%;
+  margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -13273,6 +13278,13 @@ strong.highlight {
 
 #page-wrapper {
   margin-bottom: 5%;
+}
+
+#footer-simple #email-error {
+  font-size: 0.8rem;
+  color: #df3292;
+  padding-left: 1%;
+  text-transform: inherit;
 }
 
 /* purgecss end ignore */

@@ -17,8 +17,8 @@
         </div>
     <?php } ?>
 
-    <div class="<?php is_single() ? 'single_content_holder' : '' ?>">
-        <div class="mt_single_holder readmore">
+    <div class="<?php echo is_single() ? 'single_content_holder' : '' ?>">
+        <div class="mt_single_holder <?php echo is_front_page()? 'readmore':'single_page_project_content'?>">
             <?php
             $google_map_data = get_post_meta(get_the_ID(), 'google_map_link')[0];
             if (Stringy\Stringy::create($google_map_data)->contains('maps/embed')) {

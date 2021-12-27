@@ -31,10 +31,19 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control fnt-1-2 border-0" placeholder="Enter email">
-                        <button class="btn btn-subscribe fnt-1-2" type="button">Subscribe</button>
-                    </div>
+                    <form method="POST" id="subcribeForm" name="subcribeForm" class="subcribeForm">
+                        <input type="hidden" name="action" value="subscribe">
+                        <div id="form-message-subcriber-warning" class="alert alert-warning mb-4" role="alert">
+                        </div>
+                        <div id="form-message-subcriber-success" class="alert alert-success mb-4" role="alert">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div>
+                                <input type="text" name="email" id="email" class="form-control fnt-1-2 border-0" placeholder="Enter email">
+                            </div>
+                            <button type="submit" class="btn btn-subscribe fnt-1-2" style="height: fit-content;">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="row">
@@ -74,22 +83,23 @@
         </div>
         <form method="POST" id="floatingcontactForm" name="floatingcontactForm" class="floatingContactForm">
             <input type="hidden" name="action" value="floating_contact_leads">
-        <label class="w-100"><span>Name <span class="required">*</span></span>
-            <input type="text" name="name" id="name" required="true" class="form-control input-field">
-        </label>
-        <label class="w-100"><span>Phone <span class="required">*</span></span>
-            <input type="text" name="phone" maxlength="13" placeholder="" required="true"
-                   class="form-control tel-number-field">
-        </label>
-        <label class="w-100"><span>Email <span class="required"></span></span>
-            <input type="email" name="email" required="true" class="form-control input-field">
-        </label>
-        <label class="w-100" for="field5"><span>Message <span class="required">*</span></span>
-            <textarea name="message" rows="5" id="message" class="form-control textarea-field" required="true"></textarea>
-        </label>
-        <label class="w-100">
-            <input type="submit" id="floating_enq_submit" class="btn btn-primary" value="Submit">
-        </label>
+            <label class="w-100"><span>Name <span class="required">*</span></span>
+                <input type="text" name="name" id="name" required="true" class="form-control input-field">
+            </label>
+            <label class="w-100"><span>Phone <span class="required">*</span></span>
+                <input type="text" name="phone" maxlength="13" placeholder="" required="true"
+                       class="form-control tel-number-field">
+            </label>
+            <label class="w-100"><span>Email <span class="required"></span></span>
+                <input type="email" name="email" required="true" class="form-control input-field">
+            </label>
+            <label class="w-100" for="field5"><span>Message <span class="required">*</span></span>
+                <textarea name="message" rows="5" id="message" class="form-control textarea-field"
+                          required="true"></textarea>
+            </label>
+            <label class="w-100">
+                <input type="submit" id="floating_enq_submit" class="btn btn-primary" value="Submit">
+            </label>
         </form>
     </div>
 </div>
