@@ -87,7 +87,7 @@
                             <div class="newsletter-txt">Interested in Knowing more about plots/projects, Sign up for our
                                 newsletters
                             </div>
-                            <div>
+                            <div class="news_letter_txt">
                                 <input type="text" name="email" id="email" class="form-control fnt-1-2 bo-1"
                                        placeholder="Enter email">
                             </div>

@@ -12580,6 +12580,26 @@ ul.social-media-icons-sections li {
   margin-top: 0;
 }
 
+@media only screen and (max-width: 425px) {
+  .footer_m_hodler {
+    margin-left: 3%;
+  }
+
+  .main_footer_wrapper {
+    padding-top: 10px;
+  }
+
+  .news_letter_txt {
+    width: 70%;
+  }
+
+  #header-simple-menu {
+    border-top: 1px solid lightgray;
+    margin-top: 4%;
+  }
+}
+/* Iphone 5/6/7 */
+/* Iphone 4/5 */
 #section-slider .carousel-inner {
   max-height: 500px;
 }
@@ -13283,9 +13303,54 @@ strong.highlight {
   .mt_single_holder p img {
     width: 100% !important;
   }
+
+  .mpl_wrapper .ov_wrp {
+    font-size: 0.9rem;
+  }
+  .mpl_wrapper .location_lnk_wrp {
+    line-height: unset;
+  }
+
+  .tax-list {
+    width: 95% !important;
+  }
+
+  .no-project {
+    font-size: 1rem !important;
+  }
+
+  #main_first_top .sale_btn {
+    height: 29px;
+  }
+
+  .mpl_wrapper .pt_holder .project_sub_title {
+    font-size: 1rem;
+  }
+
+  .section-contact-us .form-control {
+    font-size: 1rem;
+  }
+
+  .section-contact-us input.btn-primary {
+    font-size: 1rem;
+  }
+
+  #section-who-we-are {
+    padding-top: 3%;
+  }
 }
 /* Iphone 5/6/7 */
+@media only screen and (max-width: 375px) {
+  .news_letter_txt {
+    width: 64%;
+  }
+}
 /* Iphone 4/5 */
+@media only screen and (max-width: 320px) {
+  .news_letter_txt {
+    width: 60%;
+  }
+}
 .wrp_blog {
   position: relative;
   border: 1px solid lightsteelblue;
@@ -13542,7 +13607,7 @@ strong.highlight {
   }
 
   .first_message_holder .f2 {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding-top: 0;
     width: 100%;
   }
