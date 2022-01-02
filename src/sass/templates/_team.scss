@@ -1,0 +1,50 @@
+.team_m_holder {
+  width: 95%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.teams_fig {
+  border: 1px solid lightgrey;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+  img {
+    width: 70%;
+    margin: auto;
+    display: block;
+  }
+
+  .team_name_txt {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .team_desc_txt {
+    font-size: 0.9rem;
+  }
+
+  .figure-caption {
+    width: 70%;
+    margin: auto;
+    margin-top: 6%;
+  }
+}
+
+.teams_fig:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+#section-testimonial {
+  width: 85%;
+  margin: auto;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+.eui-widget-title {
+  border-bottom: 3px solid #0064ac;
+  text-align: left;
+  width: fit-content;
+}

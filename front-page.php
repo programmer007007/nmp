@@ -9,6 +9,7 @@
         <?php //get_template_part('templates/sections/home', 'aboutus'); ?>
         <?php get_template_part('templates/sections/home', 'whatwestandfor'); ?>
         <?php get_template_part('templates/sections/home', 'properties'); ?>
+        <?php get_template_part('templates/sections/home', 'testimonial'); ?>
         <?php get_template_part('templates/sections/home', 'blog'); ?>
         
     </main> <!-- #content-wrapper -->
