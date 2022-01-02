@@ -88,7 +88,7 @@
                                 newsletters
                             </div>
                             <div>
-                                <input type="text" name="email" id="email" class="form-control fnt-1-2 border-0"
+                                <input type="text" name="email" id="email" class="form-control fnt-1-2 bo-1"
                                        placeholder="Enter email">
                             </div>
                             <button type="submit" class="btn btn-subscribe fnt-1-2" style="height: fit-content;">

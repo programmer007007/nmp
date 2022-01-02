@@ -13151,6 +13151,10 @@ strong.highlight {
   border-bottom: 1px solid lightgray;
 }
 
+.bo-1 {
+  border: 1px solid lightgrey !important;
+}
+
 @media only screen and (max-width: 425px) {
   #section-welcome .welcome_wrapper .welcome_txt {
     font-size: 2rem;
