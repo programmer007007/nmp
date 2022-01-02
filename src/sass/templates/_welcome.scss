@@ -27,7 +27,17 @@
     }
   }
 }
-
+.btn_read_more{
+  text-decoration: none !important;
+  display: table;
+  margin-top: 10px;
+  color: white !important;
+}
+.tax-location {
+  .section-single-project{
+    border-bottom: 1px solid lightgray;
+  }
+}
 @media only screen and (min-width: 1441px) {
 }
 

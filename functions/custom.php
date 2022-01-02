@@ -136,3 +136,38 @@ function wrap_imp_word($word, $tag, $id, $content)
 {
     return str_ireplace($word, "<" . $tag . " id='$id'>" . $word . "</$tag>", $content);
 }
+
+function wp_trim_words_retain_formatting( $text, $num_words = 55, $more = null ) {
+    if ( null === $more )
+        $more = __( '&hellip;' );
+    $original_text = $text;
+    /* translators: If your word count is based on single characters (East Asian characters),
+       enter 'characters'. Otherwise, enter 'words'. Do not translate into your own language. */
+    if ( 'characters' == _x( 'words', 'word count: words or characters?' ) && preg_match( '/^utf\-?8$/i', get_option( 'blog_charset' ) ) ) {
+        $text = trim( preg_replace( "/[\n\r\t ]+/", ' ', $text ), ' ' );
+        preg_match_all( '/./u', $text, $words_array );
+        $words_array = array_slice( $words_array[0], 0, $num_words + 1 );
+        $sep = '';
+    } else {
+        $words_array = preg_split( "/[\n\r\t ]+/", $text, $num_words + 1, PREG_SPLIT_NO_EMPTY );
+        $sep = ' ';
+    }
+    if ( count( $words_array ) > $num_words ) {
+        array_pop( $words_array );
+        $text = implode( $sep, $words_array );
+        $text = $text . $more;
+    } else {
+        $text = implode( $sep, $words_array );
+    }
+    /**
+     * Filter the text content after words have been trimmed.
+     *
+     * @since 3.3.0
+     *
+     * @param string $text          The trimmed text.
+     * @param int    $num_words     The number of words to trim the text to. Default 5.
+     * @param string $more          An optional string to append to the end of the trimmed text, e.g. &hellip;.
+     * @param string $original_text The text before it was trimmed.
+     */
+    return apply_filters( 'wp_trim_words', $text, $num_words, $more, $original_text );
+}

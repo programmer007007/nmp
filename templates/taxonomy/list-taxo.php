@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <?php $pods_settings = pods('website_settings'); ?>
     <main id="content-wrapper">
-
         <?php
         $current_category = get_queried_object(); ////getting current category
         $args = array(
@@ -17,9 +16,7 @@
             )
         );
         $the_query = new WP_Query($args);
-
         ?>
-
         <div class="container-fluid">
             <?php brk_breadcrumbs(); ?>
             <div class="row">
@@ -41,7 +38,7 @@
                                     <div class="section-single-project">
                                         <?php get_template_part('templates/single/partial', 'frontheader'); ?>
                                         <div class="">
-                                            <div class="mt_single_holder readmore">
+                                            <div class="mt_single_holder">
                                                 <?php
                                                 $google_map_data = get_post_meta(get_the_ID(), 'google_map_link')[0];
                                                 if (Stringy\Stringy::create($google_map_data)->contains('maps/embed')) {
@@ -50,16 +47,12 @@
                                                 ?>
                                                 <div class="content_single_holder clearfix"><?php
                                                     $content = get_post_meta(get_the_ID(), "project_description")[0];
-                                                    echo $content;
+                                                    //echo $content;
+                                                    $permalink = get_the_permalink();
+                                                    echo wp_trim_words_retain_formatting($content, 200,
+                                                        "<a href='$permalink' target='_blank' class='btn btn-primary btn_read_more'>Read More</a>");
                                                     ?>
                                                 </div>
-                                                <?php
-                                                get_template_part('templates/single/partial', 'images');
-                                                $term_list = get_the_terms(get_the_ID(), 'project_benefit');
-                                                if (count($term_list)) {
-                                                    get_template_part('templates/single/partial', 'benefit', ["term_list" => $term_list]);
-                                                }
-                                                ?>
                                             </div>
                                         </div>
                                     </div>
@@ -90,14 +83,14 @@
     <style>
         <?php $width = get_term_meta($current_category->term_id,"width",true);
         if($width){
-            ?>
+        ?>
         .mpl_wrapper .pt_holder .project_sub_title {
             width: <?php echo $width;?>%;
         }
 
         <?php
             }
-            ?>
+        ?>
     </style>
 <?php
 get_footer();

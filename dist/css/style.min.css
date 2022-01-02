@@ -13140,6 +13140,17 @@ strong.highlight {
   padding-top: 3%;
 }
 
+.btn_read_more {
+  text-decoration: none !important;
+  display: table;
+  margin-top: 10px;
+  color: white !important;
+}
+
+.tax-location .section-single-project {
+  border-bottom: 1px solid lightgray;
+}
+
 @media only screen and (max-width: 425px) {
   #section-welcome .welcome_wrapper .welcome_txt {
     font-size: 2rem;
