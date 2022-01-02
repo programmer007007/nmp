@@ -12,6 +12,8 @@ if ( ! function_exists( 'brk_navmenus' ) ) {
 			array(
 				'header' => esc_html__( 'Header Menu', 'bricks' ),
 				'footer' => esc_html__( 'Footer Menu', 'bricks' ),
+                'footer_left_menu' => esc_html__( 'Footer Left Menu', 'bricks' ),
+                'footer_right_menu' => esc_html__( 'Footer Right Menu', 'bricks' ),
 			)
 		);
 

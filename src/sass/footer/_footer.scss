@@ -1,7 +1,7 @@
 #footer-wrapper {
   .custom-logo {
     width: auto;
-    max-height: 40px;
+    max-height: 50px;
   }
 }
 
@@ -13,7 +13,6 @@
 
 .footer_social_holder {
   padding-bottom: 1.1%;
-  border-bottom: 1px solid lightgray;
 }
 
 .footer_holder {
@@ -51,30 +50,37 @@ ul.social-media-icons-sections li {
   text-decoration: none;
   background-color: transparent;
 }
-.fnt-1-2{
+
+.fnt-1-2 {
   font-size: 1.2rem;
 }
-.btn-subscribe{
+
+.btn-subscribe {
   background-color: #9d9d9c;
   border-color: #9d9d9c;
-  border-radius: 0!important;
+  border-radius: 0 !important;
   color: white;
 }
-.address{
+
+.address {
   color: black;
   padding-top: 9px;
   font-size: 0.9rem;
   opacity: 0.7;
 }
-.btn-subscribe:hover{
-  color:black;
+
+.btn-subscribe:hover {
+  color: black;
 }
-#brk-signature{
-  padding:3px;
+
+#brk-signature {
+  padding: 3px;
 }
-#footer-copyright{
+
+#footer-copyright {
   background-color: #363636;
 }
+
 //.footer_container{
 //  width: 80%;
 //  margin:auto;
@@ -92,6 +98,7 @@ ul.social-media-icons-sections li {
   color: black;
   font-family: 'Optima';
 }
+
 .contact-opener { /*opener button*/
   position: absolute;
   left: -56px;
@@ -104,6 +111,77 @@ ul.social-media-icons-sections li {
   border-radius: 5px 5px 0px 0px;
   background: black;
 }
-.contact-body label{
+
+.contact-body label {
+  width: 100%;
+}
+
+.newsletter-txt {
+  padding: 2%;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#subcribeForm .alert {
+  margin-bottom: 0;
+}
+
+.footer_social_holder {
+  color: #6b6b6c;
+}
+
+.footer_ul_holder {
+  list-style: none;
+  padding-left: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.footer_ul_holder li svg {
+  color: #ccb18a;
+}
+
+.footer_ul_holder li {
+  font-size: 0.85rem;
+}
+
+.footer_ul_holder li:hover {
+  text-decoration: underline;
+}
+
+.footer_m_hodler {
+  margin-left: 10%;
+}
+
+.address_holder {
+  padding-left: 7%;
+  padding-top: 7%;
+  font-size: 0.9rem;
+}
+
+.footer_m_hodler nav .footer_ul_holder {
+  a {
+    color: unset;
+    display: inline;
+    padding-left: 10px;
+  }
+
+  li.menu-item a:hover::after, li.menu-item a:focus::after {
+    transition: unset;
+  }
+
+  li.menu-item a {
+    display: inline;
+  }
+
+  li.menu-item a::after {
+    width: auto;;
+  }
+}
+
+.social-media-icons-sections {
+  padding-left: 8%;
+}
+
+.footer-social-icons {
   width: 100%;
 }

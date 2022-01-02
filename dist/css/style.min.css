@@ -12383,7 +12383,7 @@ li.menu-item .active a::after {
 /* Iphone 4/5 */
 #footer-wrapper .custom-logo {
   width: auto;
-  max-height: 40px;
+  max-height: 50px;
 }
 
 .main_footer_wrapper {
@@ -12394,7 +12394,6 @@ li.menu-item .active a::after {
 
 .footer_social_holder {
   padding-bottom: 1.1%;
-  border-bottom: 1px solid lightgray;
 }
 
 .footer_holder {
@@ -12492,6 +12491,71 @@ ul.social-media-icons-sections li {
 }
 
 .contact-body label {
+  width: 100%;
+}
+
+.newsletter-txt {
+  padding: 2%;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#subcribeForm .alert {
+  margin-bottom: 0;
+}
+
+.footer_social_holder {
+  color: #6b6b6c;
+}
+
+.footer_ul_holder {
+  list-style: none;
+  padding-left: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.footer_ul_holder li svg {
+  color: #ccb18a;
+}
+
+.footer_ul_holder li {
+  font-size: 0.85rem;
+}
+
+.footer_ul_holder li:hover {
+  text-decoration: underline;
+}
+
+.footer_m_hodler {
+  margin-left: 10%;
+}
+
+.address_holder {
+  padding-left: 7%;
+  padding-top: 7%;
+  font-size: 0.9rem;
+}
+
+.footer_m_hodler nav .footer_ul_holder a {
+  color: unset;
+  display: inline;
+  padding-left: 10px;
+}
+.footer_m_hodler nav .footer_ul_holder li.menu-item a:hover::after, .footer_m_hodler nav .footer_ul_holder li.menu-item a:focus::after {
+  transition: unset;
+}
+.footer_m_hodler nav .footer_ul_holder li.menu-item a {
+  display: inline;
+}
+.footer_m_hodler nav .footer_ul_holder li.menu-item a::after {
+  width: auto;
+}
+
+.social-media-icons-sections {
+  padding-left: 8%;
+}
+
+.footer-social-icons {
   width: 100%;
 }
 
@@ -13374,6 +13438,28 @@ strong.highlight {
 
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 1rem;
+}
+
+.tax-list {
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.no-project {
+  font-size: 1.5rem;
+  text-align: center;
+  background: lightgray;
+  padding: 2%;
+}
+
+.no-project a {
+  color: blue;
+}
+
+.no-project a:hover {
+  color: blue;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {

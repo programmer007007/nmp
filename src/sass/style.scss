@@ -21,8 +21,6 @@
 @import '../../node_modules/swiper/swiper-bundle';
 //@import '../../node_modules/swiper/swiper.min';
 
-
-
 /* purgecss start ignore */
 
 // @import 'integrations/aos';  // required npm packages: 'aos'
@@ -51,7 +49,6 @@
 @import "templates/mpl";
 @import "templates/blog";
 
-
 @import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
 
 @import url('//fonts.cdnfonts.com/css/optima');
@@ -65,9 +62,11 @@ body {
 .optima {
   font-family: 'Optima', sans-serif;
 }
-.basker{
+
+.basker {
   font-family: 'Baskervville', serif;
 }
+
 .opensan {
   font-family: 'Open Sans', sans-serif;
 }
@@ -82,17 +81,19 @@ body {
   color: white;
   z-index: 2;
 }
-#video_holder,.m_slider_wrp{
+
+#video_holder, .m_slider_wrp {
   position: relative;
 
 }
+
 .video_overlay:after {
   background-color: rgba(0, 0, 0, 0.4);
   content: "";
   width: 100%;
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   display: block;
   z-index: 1;
   height: 100%;
@@ -132,17 +133,40 @@ body {
   display: block;
   width: 100%;
 }
-.swp_nav_btn{
+
+.swp_nav_btn {
   padding: 25px;
   color: white;
   background-color: black;
 }
-#contact_body label.error{
+
+#contact_body label.error {
   font-size: 12px;
   color: red;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {font-size: 1rem;}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1rem;
+}
+
+.tax-list {
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+}
+.no-project{
+  font-size: 1.5rem;
+  text-align: center;
+  background: lightgray;
+  padding: 2%;
+}
+.no-project a{
+  color:blue;
+}
+.no-project a:hover{
+  color:blue;
+  text-decoration: underline;
+}
 @media only screen and (min-width: 1441px) {
 }
 
