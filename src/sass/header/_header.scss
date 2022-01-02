@@ -118,6 +118,13 @@ li.menu-item .active a::after {
   text-transform: uppercase;
 }
 
+#main_first_top {
+  .sale_btn {
+    padding-top: 4px;
+    height: 33px;
+  }
+}
+
 @media only screen and (min-width: 1441px) {
 }
 
@@ -146,6 +153,15 @@ li.menu-item .active a::after {
   }
   #header-wrapper .custom-logo {
     height: 50px;
+  }
+  #main_first_top {
+    .zoom_btn {
+      margin: 0;
+    }
+    .sale_btn {
+      margin: 0;
+      margin-left: 3px;
+    }
   }
 }
 

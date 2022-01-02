@@ -12359,6 +12359,11 @@ li.menu-item .active a::after {
   text-transform: uppercase;
 }
 
+#main_first_top .sale_btn {
+  padding-top: 4px;
+  height: 33px;
+}
+
 @media only screen and (max-width: 425px) {
   .top_sub_menu_wrp {
     font-size: 0.8rem;
@@ -12377,6 +12382,14 @@ li.menu-item .active a::after {
 
   #header-wrapper .custom-logo {
     height: 50px;
+  }
+
+  #main_first_top .zoom_btn {
+    margin: 0;
+  }
+  #main_first_top .sale_btn {
+    margin: 0;
+    margin-left: 3px;
   }
 }
 /* Iphone 5/6/7 */
@@ -12536,6 +12549,10 @@ ul.social-media-icons-sections li {
   font-size: 0.9rem;
 }
 
+#calendar .modal-title {
+  color: black;
+}
+
 .footer_m_hodler nav .footer_ul_holder a {
   color: unset;
   display: inline;
@@ -12557,6 +12574,10 @@ ul.social-media-icons-sections li {
 
 .footer-social-icons {
   width: 100%;
+}
+
+#wpcal-widget .widget-main.state-form, #wpcal-widget .widget-main.state-select-date {
+  margin-top: 0;
 }
 
 #section-slider .carousel-inner {
@@ -13114,8 +13135,8 @@ strong.highlight {
   font-size: 3rem;
 }
 #section-welcome .welcome_wrapper .welcome_dy_txt_holder {
-  font-size: 1.2rem;
-  line-height: 2.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
   padding-top: 3%;
 }
 

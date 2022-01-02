@@ -133,5 +133,5 @@
         </form>
     </div>
 </div>
-
+<?php get_template_part( 'templates/components/calendar', '' );?>
 

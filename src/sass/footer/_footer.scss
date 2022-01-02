@@ -157,7 +157,11 @@ ul.social-media-icons-sections li {
   padding-top: 7%;
   font-size: 0.9rem;
 }
-
+#calendar {
+  .modal-title {
+    color: black;
+  }
+}
 .footer_m_hodler nav .footer_ul_holder {
   a {
     color: unset;
@@ -184,4 +188,7 @@ ul.social-media-icons-sections li {
 
 .footer-social-icons {
   width: 100%;
+}
+#wpcal-widget .widget-main.state-form, #wpcal-widget .widget-main.state-select-date{
+  margin-top: 0;
 }

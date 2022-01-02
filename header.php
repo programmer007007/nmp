@@ -11,23 +11,20 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-
 <div id="site-wrapper" class="d-flex flex-column min-vh-100">
     <div id="main_first_top" class="d-flex flex-row-reverse toppest_menu_wrp">
         <div class="d-flex m-10 top_sub_menu_wrp">
-            <a href="#" class="top_menu"><i class="fas fa-video mr-7p"></i>Zoom Meeting</a>
-            <a href="https://api.whatsapp.com/send?phone=<?php echo $pods_settings->display('whatsapp_nos');?>&text=Hi" class="top_menu"><i class="fab fa-whatsapp mr-7p"></i>Sales Support</a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#calendar" class="top_menu zoom_btn"><i
+                        class="fas fa-video mr-7p"></i>Zoom Meeting
+            </button>
+            <a target="_blank"
+               href="https://api.whatsapp.com/send?phone=<?php echo $pods_settings->display('whatsapp_nos'); ?>&text=Hi"
+               class="top_menu sale_btn"><i class="fab fa-whatsapp mr-7p"></i>Sales Support</a>
         </div>
     </div>
     <header id="header-wrapper" class="sticky-top bg-dark">
-
         <?php
-
-        // get_template_part('templates/header/header', 'topbar');
         get_template_part('templates/header/header', 'simple');
-
         ?>
-
     </header> <!-- #header-wrapper -->
-
     <div id="page-wrapper" class="flex-grow-1">
