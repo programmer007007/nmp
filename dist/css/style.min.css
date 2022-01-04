@@ -13110,6 +13110,13 @@ strong.highlight {
   .single_content_holder {
     width: 90%;
   }
+  .single_content_holder ol, .single_content_holder ul {
+    padding-left: 0.5rem;
+  }
+
+  .single_page_project_content {
+    width: 100%;
+  }
 }
 /* Iphone 5/6/7 */
 /* Iphone 4/5 */
