@@ -13079,7 +13079,7 @@ strong.highlight {
 
 @media only screen and (max-width: 425px) {
   .single-project .section-single-project a.a_project_title h2, .single-project .section-single-project a.a_project_title .h2 {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 
   #lightgallery {
@@ -13101,6 +13101,8 @@ strong.highlight {
 
   .project_sub_title {
     font-size: 1.3rem;
+    width: 95%;
+    margin: auto;
   }
 
   #section-properties, #section-blogs, #section-welcome .welcome_wrapper .welcome_container {
