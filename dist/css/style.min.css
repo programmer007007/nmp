@@ -12223,6 +12223,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   color: green;
 }
 
+.h_28vh {
+  height: 28vh;
+}
+
+.figure-img {
+  margin: auto;
+  display: flex;
+}
+
 @-webkit-keyframes blinker {
   50% {
     opacity: 0;
@@ -12835,6 +12844,8 @@ ul.social-media-icons-sections li {
 
 .whoweare_img {
   margin-bottom: 4%;
+  border: 1px solid lightgray;
+  padding: 2%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -13128,13 +13139,13 @@ strong.highlight {
   font-weight: bold;
 }
 .section-contact-us .form-control {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .section-contact-us input.btn-primary {
   color: white;
   width: 157px;
   padding: 6px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -13472,13 +13483,6 @@ strong.highlight {
   margin: auto;
   display: block;
 }
-.teams_fig .team_name_txt {
-  font-size: 1.8rem;
-  text-align: center;
-}
-.teams_fig .team_desc_txt {
-  font-size: 0.9rem;
-}
 .teams_fig .figure-caption {
   width: 70%;
   margin: auto;
@@ -13503,6 +13507,22 @@ strong.highlight {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.team_desc_holder {
+  background-color: #1a2a3b;
+  color: white;
+  padding: 3%;
+  margin: 0;
+  height: 100%;
+}
+
+.team_name_txt {
+  font-size: 1.8rem;
+}
+
+.team_desc_txt {
+  font-size: 0.9rem;
 }
 
 /* purgecss end ignore */

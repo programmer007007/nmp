@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   font-family: Lato, sans-serif;
 }
+
 .section-tagline:after {
   display: block;
   content: "";
@@ -87,13 +88,22 @@ h1, h2, h3, h4, h5 {
   margin-top: 23px;
   margin-left: 22px;
 }
+
 .blink_me {
   animation: blinker 1s linear infinite;
 }
-.col-green{
+
+.col-green {
   color: green;
 }
 
+.h_28vh {
+  height: 28vh;
+}
+.figure-img{
+  margin: auto;
+  display: flex;
+}
 @keyframes blinker {
   50% {
     opacity: 0;

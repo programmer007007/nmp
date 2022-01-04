@@ -15,14 +15,6 @@
     display: block;
   }
 
-  .team_name_txt {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .team_desc_txt {
-    font-size: 0.9rem;
-  }
 
   .figure-caption {
     width: 70%;
@@ -47,4 +39,20 @@
   border-bottom: 3px solid #0064ac;
   text-align: left;
   width: fit-content;
+}
+
+.team_desc_holder {
+  background-color: #1a2a3b;
+  color: white;
+  padding: 3%;
+  margin: 0;
+  height: 100%;
+}
+
+.team_name_txt {
+  font-size: 1.8rem;
+}
+
+.team_desc_txt {
+  font-size: 0.9rem;
 }

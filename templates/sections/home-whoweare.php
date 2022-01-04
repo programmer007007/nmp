@@ -8,9 +8,8 @@
                     <img src="<?php echo $pods_settings->display("who_we_are_image"); ?>" class="img-fluid whoweare_img"/>
                 </div>
                 <div class="col-md-6 col-12 hide_tab who_are_are_txt_holder">
-                    <div class="pt-5">
-                        <h4 class="">Who we are</h4>
-                        <p class=""><?php echo $pods_settings->display("who_we_are_text"); ?></p>
+                    <div class="d-block">
+                        <?php echo $pods_settings->display("who_we_are_text"); ?>
                     </div>
                 </div>
             </div>
