@@ -13533,6 +13533,13 @@ strong.highlight {
   font-size: 0.9rem;
 }
 
+@media only screen and (max-width: 425px) {
+  .team_m_holder .team_desc_col_holder {
+    padding: 0;
+  }
+}
+/* Iphone 5/6/7 */
+/* Iphone 4/5 */
 /* purgecss end ignore */
 .optima {
   font-family: "Optima", sans-serif;
