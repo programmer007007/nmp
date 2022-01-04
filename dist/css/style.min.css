@@ -13149,6 +13149,14 @@ strong.highlight {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 425px) {
+  .section-contact-us .right_bg {
+    padding: 0;
+    height: 60vh;
+  }
+}
+/* Iphone 5/6/7 */
+/* Iphone 4/5 */
 #section-welcome .welcome_wrapper .welcome_container {
   width: 80%;
   margin: auto;
