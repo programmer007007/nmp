@@ -53,8 +53,8 @@ add_action('wp_ajax_contact_leads', 'record_leads');
 add_action('wp_ajax_nopriv_contact_leads', 'record_leads');
 function record_leads()
 {
-    $headers[] = 'MIME-Version: 1.0';
-    $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+    $headers = "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     global $current_user, $wpdb;
     $name = trim($wpdb->_real_escape($_REQUEST["name"]));
     $email = trim($wpdb->_real_escape($_REQUEST["email"]));
