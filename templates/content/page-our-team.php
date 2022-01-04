@@ -24,7 +24,7 @@
                         : 'https://via.placeholder.com/400x400'; ?>" class="figure-img img-fluid rounded"
                          alt="<?php the_title(); ?>">
                 </div>
-                <div class="col-md-4 col-12" style="margin-bottom: 2%;">
+                <div class="col-md-4 col-12 team_desc_col_holder" style="margin-bottom: 2%;">
                     <div class="team_desc_holder">
                     <div class="team_name_txt">
                         <?php
