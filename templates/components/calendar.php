@@ -6,7 +6,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-               <?php echo do_shortcode("[wpcal id=3]"); ?>
+                <?php if (is_local()) { ?>
+                    <?php echo do_shortcode("[wpcal id=3]"); ?>
+                <?php } else { ?>
+                    <?php echo do_shortcode("[wpcal id=4]"); ?>
+                <?php } ?>
             </div>
         </div>
     </div>

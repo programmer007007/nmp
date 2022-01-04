@@ -174,3 +174,10 @@ function wp_trim_words_retain_formatting($text, $num_words = 55, $more = null)
      */
     return apply_filters('wp_trim_words', $text, $num_words, $more, $original_text);
 }
+function is_local() {
+    if($_SERVER['HTTP_HOST'] == 'localhost'
+        || substr($_SERVER['HTTP_HOST'],0,3) == "127."
+        || substr($_SERVER['HTTP_HOST'],0,3) == '10.'
+        || substr($_SERVER['HTTP_HOST'],0,7) == '192.168') return true;
+    return false;
+}
