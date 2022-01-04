@@ -13438,7 +13438,6 @@ strong.highlight {
   margin: auto;
   border: 1px solid lightgray;
   padding: 2%;
-  font-family: "Baskervville";
 }
 
 .section-single-blog {
@@ -13488,6 +13487,13 @@ strong.highlight {
   text-transform: inherit;
 }
 
+@media only screen and (max-width: 425px) {
+  .pt_holder_blog {
+    width: 95%;
+  }
+}
+/* Iphone 5/6/7 */
+/* Iphone 4/5 */
 .team_m_holder {
   width: 95%;
   margin: auto;
