@@ -7,7 +7,6 @@ import './integrations/bootstrap'; // integrates some bootstrap classes into wor
 // import "./integrations/swiper"  // required npm package: 'swiper'
 
 // --- Custom components ---
-
 import './components/backtotop';
 //import './header/headerscroll';
 import './customs/myscripts';
