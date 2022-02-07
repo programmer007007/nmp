@@ -13,6 +13,5 @@
         <?php get_template_part('templates/sections/home', 'blog'); ?>
         
     </main> <!-- #content-wrapper -->
-
 <?php
 get_footer();

@@ -5,7 +5,7 @@
         <div class="welcome_container">
             <div class="row">
                 <div class="col-md-4 col-12 hide_tab">
-                    <div class="swiper mySwiper">
+                    <div class="swiper mySwiper" data-aos="fade-left">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
@@ -25,8 +25,8 @@
                 <div class="col-md-8 col-12 width_tab_100">
                     <div class="pt-3 welcome_content_holder">
 
-                        <h3 class="welcome_txt">WELCOME TO <span class="cmp_name"><?php echo strtoupper($pods_settings->display("company_name")); ?></span></h3>
-                        <div class="welcome_dy_txt_holder">
+                        <h3 class="welcome_txt" data-aos="fade-down">WELCOME TO <span class="cmp_name"><?php echo strtoupper($pods_settings->display("company_name")); ?></span></h3>
+                        <div class="welcome_dy_txt_holder" data-aos="fade-right">
                             <?php
                             $query = get_post($content->ID);
                             $content = apply_filters('the_content', $query->post_content);

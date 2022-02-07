@@ -1,8 +1,8 @@
 <?php $pods_settings = pods('website_settings'); ?>
 <section id="section-who-we-are" class="who_we_are_bg">
-    <h3 class="text-center who_we_are_heading"><span class="heading_bottom">What we stand for</span></h3>
+    <h3 class="text-center who_we_are_heading"><span class="heading_bottom" data-aos="fade-down">What we stand for</span></h3>
     <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-right">
             <div class="col-md-4 col-12">
                 <div class="d-flex flex-column">
                     <div class="text-center icon_holder"><img

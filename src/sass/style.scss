@@ -23,7 +23,7 @@
 
 /* purgecss start ignore */
 
-// @import 'integrations/aos';  // required npm packages: 'aos'
+@import 'integrations/aos';  // required npm packages: 'aos'
 // @import 'integrations/swiper';  // required npm package: 'swiper'
 
 // --- WP Core required styles ---
@@ -51,7 +51,6 @@
 @import "templates/team";
 
 @import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
-
 @import url('//fonts.cdnfonts.com/css/optima');
 @import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500&display=swap');
 @import url('//fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');

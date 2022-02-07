@@ -10,10 +10,19 @@
 }
 
 .pt_holder {
-  background: url('../img/home-banner-bg.jpg') no-repeat center center;
+  //background: url('../img/home-banner-bg.jpg') no-repeat center center;
+  background-color: white;
   padding-top: 3%;
   padding-bottom: 6%;
   background-size: cover !important;
+}
+.pt_holder_new{
+  position: absolute;
+  width: 50%;
+  left: 8%;
+  z-index: 0;
+  top: 12%;
+  padding-bottom: 0;
 }
 
 .proj_img {
@@ -31,7 +40,7 @@
 
 .mt_single_holder {
   display: inline-block;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 
 .a_project_title:hover {

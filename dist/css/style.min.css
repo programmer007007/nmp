@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 /* purgecss start ignore */
 /* purgecss end ignore */
 /*
@@ -15,6 +13,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("//unpkg.com/aos@next/dist/aos.css");
 @import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
 @import url("//fonts.cdnfonts.com/css/optima");
 @import url("//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500&display=swap");
@@ -12019,6 +12018,16 @@ button.swiper-pagination-bullet {
 }
 
 /* purgecss start ignore */
+[data-aos=custom-animation] {
+  opacity: 0%;
+  transition-property: transform, opacity;
+  transform: rotate(360deg);
+}
+[data-aos=custom-animation].aos-animate {
+  opacity: 100%;
+  transform: rotate(0);
+}
+
 .alignnone {
   margin: 5px 20px 20px 0;
 }
@@ -12893,10 +12902,19 @@ ul.social-media-icons-sections li {
 }
 
 .pt_holder {
-  background: url("../img/home-banner-bg.jpg") no-repeat center center;
+  background-color: white;
   padding-top: 3%;
   padding-bottom: 6%;
   background-size: cover !important;
+}
+
+.pt_holder_new {
+  position: absolute;
+  width: 50%;
+  left: 8%;
+  z-index: 0;
+  top: 12%;
+  padding-bottom: 0;
 }
 
 .proj_img {
@@ -12914,7 +12932,7 @@ ul.social-media-icons-sections li {
 
 .mt_single_holder {
   display: inline-block;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 
 .a_project_title:hover {

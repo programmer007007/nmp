@@ -10,9 +10,11 @@
     <div class="<?php echo is_single() ? 'single_content_holder' : '' ?>">
         <div class="mt_single_holder <?php echo is_front_page() ? 'readmore' : 'single_page_project_content' ?>">
             <?php
-            $google_map_data = get_post_meta(get_the_ID(), 'google_map_link')[0];
-            if (Stringy\Stringy::create($google_map_data)->contains('maps/embed')) {
-                echo "<div class='map_holder float-start'><iframe src='" . $google_map_data . "'  style='width:100%;' height='450' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>";
+            if (is_front_page()) {
+                $google_map_data = get_post_meta(get_the_ID(), 'google_map_link')[0];
+                if (Stringy\Stringy::create($google_map_data)->contains('maps/embed')) {
+                    echo "<div class='map_holder float-start'><iframe src='" . $google_map_data . "'  style='width:100%;' height='450' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>";
+                }
             }
             ?>
             <div class="content_single_holder clearfix"><?php
