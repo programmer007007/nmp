@@ -5,7 +5,7 @@
         $term_list = $args["term_list"];
         foreach ($term_list as $term_single) {
             ?>
-            <div class="col-xl-3 col-md-4 col-12">
+            <div class="col-xl-3 col-md-4 col-12" data-aos="fade-up">
                 <div class="benefit_txt row-eq-height">
                     <div class="d-flex"><i class="far fa-check-circle"
                                            style="font-size: 2rem;"></i>

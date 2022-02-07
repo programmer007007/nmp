@@ -19,6 +19,7 @@
             ?>
             <div class="content_single_holder clearfix"><?php
                 $content = get_post_meta(get_the_ID(), "project_description")[0];
+                $content = str_replace('<img', '<img data-aos="flip-left" ', $content);
                 echo $content;
                 ?>
             </div>

@@ -8,7 +8,7 @@ if (count($project_images)) {
 
         <?php foreach ($project_images as $item) {
             if (isset($item['guid'])) { ?>
-                <a class="col-md-3 col-12 proj_img" href="<?php echo $item['guid']; ?>">
+                <a data-aos="fade-up" class="col-md-3 col-12 proj_img" href="<?php echo $item['guid']; ?>">
                     <img src="<?php echo $item['guid']; ?>"/>
                 </a>
             <?php }

@@ -8,7 +8,9 @@
         <div class="">
             <h1 class="blog_title"><?php the_title(); ?></h1>
             <h3 class="blog_written_by_holder">By <?php the_author(); ?> | <?php echo get_the_date('d-m-Y'); ?></h3>
-            <div class="blog_content"><?php the_content(); ?></div>
+            <div class="blog_content"><?php $data = get_the_content();
+                $data = str_replace('<img', '<img data-aos="fade-down" ', $data);
+                echo $data; ?></div>
         </div>
     </div>
 </div>
