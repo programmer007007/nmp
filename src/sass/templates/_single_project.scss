@@ -116,7 +116,11 @@ strong.highlight:before{
   border: 1px solid lightgray;
   padding: 1%;
 }
-
+.common_page_wrapper{
+  .pt_holder {
+    background: url("../img/home-banner-bg.jpg") no-repeat center center;
+  }
+}
 .pr-5 {
   padding-right: 5%;
 }

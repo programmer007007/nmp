@@ -9,7 +9,7 @@ if ($query->post_count) { ?>
     <section id="section-blogs"
              class="blogs <?php is_front_page() ? 'front_page_blog_holder' : 'list_blog' ?>">
         <h3 class="blogs"><span class="heading_bottom" data-aos="fade-down">BLOGS</span></h3>
-        <div class="row my-4" data-aos="fade-left">
+        <div class="row my-4" data-aos="fade-up">
             <?php
 
             while ($query->have_posts()) {

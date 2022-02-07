@@ -2,7 +2,7 @@
 <section id="section-properties" class="properties <?php is_front_page() ? 'front_page_property' : 'list_properties' ?>"
          >
     <h3 class="properties"><span class="heading_bottom" data-aos="fade-down">LATEST LAUNCHES</span></h3>
-    <div class="row m-0 my-4" data-aos="fade-left">
+    <div class="row m-0 my-4" data-aos="fade-up">
         <?php
         $query = new WP_Query(array(
             'post_type' => 'project',

@@ -5,10 +5,10 @@
         <div class="who_we_are_container">
             <div class="row">
                 <div class="col-md-6 col-12 width_tab_100">
-                    <img src="<?php echo $pods_settings->display("who_we_are_image"); ?>" class="img-fluid whoweare_img"/>
+                    <img src="<?php echo $pods_settings->display("who_we_are_image"); ?>" data-aos="fade-right" class="img-fluid whoweare_img" />
                 </div>
                 <div class="col-md-6 col-12 hide_tab who_are_are_txt_holder">
-                    <div class="d-block">
+                    <div class="d-block" data-aos="fade-up">
                         <?php echo $pods_settings->display("who_we_are_text"); ?>
                     </div>
                 </div>
