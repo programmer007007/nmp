@@ -13143,9 +13143,26 @@ strong.highlight {
   .single_page_project_content {
     width: 100% !important;
   }
+
+  .pt_holder_new {
+    width: 85%;
+    left: 0;
+    top: 7%;
+  }
 }
 /* Iphone 5/6/7 */
+@media only screen and (max-width: 375px) {
+  .pt_holder_new {
+    top: 6.7%;
+  }
+}
 /* Iphone 4/5 */
+@media only screen and (max-width: 320px) {
+  .pt_holder_new {
+    width: 100%;
+    top: 6.4%;
+  }
+}
 .section-contact-us .left_bg {
   background-color: #e9e9e9;
 }
