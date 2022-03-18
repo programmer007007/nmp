@@ -6540,6 +6540,7 @@ textarea.form-control-lg {
 }
 
 .sticky-top {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
@@ -6547,6 +6548,7 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .sticky-sm-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6554,6 +6556,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .sticky-md-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6561,6 +6564,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .sticky-lg-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6568,6 +6572,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .sticky-xl-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6575,6 +6580,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1400px) {
   .sticky-xxl-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6777,6 +6783,7 @@ textarea.form-control-lg {
 }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -12627,6 +12634,15 @@ ul.social-media-icons-sections li {
   max-height: 500px;
 }
 
+.sub_latest_launch {
+  color: #2a2525;
+  padding-top: 2%;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
 #sidebar-main-wrapper ul {
   padding-left: 0;
   list-style-type: none;
@@ -12840,7 +12856,7 @@ ul.social-media-icons-sections li {
 }
 
 #section-who-we-are {
-  padding-top: 4%;
+  padding-top: 8%;
   width: 95%;
   margin: auto;
 }
@@ -12987,6 +13003,10 @@ ul.social-media-icons-sections li {
   text-transform: uppercase;
 }
 
+.a_project_title h2, .a_project_title .h2 {
+  min-height: 92px;
+}
+
 .benefit_txt {
   padding-left: 2%;
   font-size: 0.9rem;
@@ -13034,6 +13054,10 @@ strong.highlight:before {
 #section-properties, #section-blogs {
   width: 80%;
   margin: auto;
+}
+
+#section-properties .properties {
+  text-align: center;
 }
 
 .a_project_title h2, .a_project_title .h2 {
@@ -13211,6 +13235,10 @@ strong.highlight {
 }
 /* Iphone 5/6/7 */
 /* Iphone 4/5 */
+#section-welcome .welcome_wrapper {
+  background-color: #f9f9f9;
+  padding: 2%;
+}
 #section-welcome .welcome_wrapper .welcome_container {
   width: 80%;
   margin: auto;
@@ -13451,7 +13479,6 @@ strong.highlight {
 }
 
 #section-blogs {
-  margin-top: 4%;
   margin-bottom: 3%;
 }
 
@@ -13518,7 +13545,7 @@ strong.highlight {
 }
 
 #page-wrapper {
-  margin-bottom: 5%;
+  border-bottom: 1px solid lightgrey;
 }
 
 #footer-simple #email-error {
@@ -13528,6 +13555,75 @@ strong.highlight {
   text-transform: inherit;
 }
 
+.blog_lbg {
+  margin-top: 5%;
+}
+
+.sub_text_holder {
+  width: 50%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3em;
+}
+
+.img_slider_holder {
+  overflow: hidden;
+}
+
+.right_arrow {
+  display: none;
+}
+
+.how_to_buy_img_holder {
+  position: absolute;
+  right: 0;
+  width: 41%;
+  top: 14%;
+}
+
+.section-how-to-buy-lght {
+  position: relative;
+}
+
+.page-id-24 #section-who-we-are {
+  padding-top: 3%;
+}
+
+@media only screen and (max-width: 480px) {
+  .sub_latest_launch {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  .sub_text_holder {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  .wrp_blog a {
+    font-size: 0.8em;
+    line-break: anywhere;
+  }
+
+  .right_arrow {
+    display: none;
+    float: right;
+    position: absolute;
+    right: 12%;
+    font-size: 2rem;
+    color: lightgray;
+    margin-top: 15%;
+    z-index: 999;
+    background-color: black;
+    padding: 3px;
+    padding-left: 4px;
+  }
+
+  .how_to_buy_img_holder {
+    display: none;
+  }
+}
 @media only screen and (max-width: 425px) {
   .pt_holder_blog {
     width: 95%;
@@ -13570,7 +13666,8 @@ strong.highlight {
   width: 85%;
   margin: auto;
   padding-left: 3%;
-  padding-top: 1%;
+  padding-top: 5%;
+  padding-bottom: 6%;
 }
 
 .eui-widget-title {
@@ -13579,6 +13676,8 @@ strong.highlight {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: auto;
+  margin-bottom: 5%;
 }
 
 .team_desc_holder {
@@ -13604,7 +13703,54 @@ strong.highlight {
 }
 /* Iphone 5/6/7 */
 /* Iphone 4/5 */
+#section-whyus,
+#section-how-to-buy,
+#section-demarcation,
+#section-deed-registration {
+  margin-top: 4%;
+  margin-bottom: 3%;
+  width: 80%;
+  margin: auto;
+}
+
+#section-whyus, #section-deed-registration {
+  padding-top: 4%;
+}
+
+#section-whyus {
+  padding-bottom: 5%;
+}
+
+.swiper_whyus .swiper-slide {
+  border: 1px solid lightgray;
+  padding: 1%;
+  cursor: pointer;
+}
+
+h3.whyus, .whyus.h3 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.preview_pdf {
+  display: none;
+}
+
+.preview_pdf_iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.mr-2 {
+  margin-right: 2%;
+}
+
 /* purgecss end ignore */
+body {
+  overflow-x: hidden;
+}
+
 .optima {
   font-family: "Optima", sans-serif;
 }
@@ -13689,6 +13835,10 @@ strong.highlight {
   font-size: 1rem;
 }
 
+.swiper_blog .swiper-pagination {
+  position: relative;
+}
+
 .tax-list {
   width: 90%;
   margin: auto;
@@ -13709,6 +13859,12 @@ strong.highlight {
 .no-project a:hover {
   color: blue;
   text-decoration: underline;
+}
+
+.light_bg {
+  background: #f9f9f9;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 @media only screen and (max-width: 768px) {

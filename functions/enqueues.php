@@ -46,3 +46,10 @@ function brk_google_fonts_preconnect()
 }
 
 add_action('wp_head', 'brk_google_fonts_preconnect', 7);
+
+// enqueues css on the admin area wordpress
+add_action('admin_enqueue_scripts', 'brk_admin_styles');
+function brk_admin_styles()
+{
+    wp_enqueue_style('brk-admin-styles', get_template_directory_uri() . '/dist/css/admin.min.css', false, '1.0.0', 'all');
+}

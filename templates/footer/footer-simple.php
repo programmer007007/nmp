@@ -39,15 +39,15 @@
                                 <?php
                                 wp_nav_menu(
                                     array(
-                                        'theme_location'    => 'footer_left_menu',
-                                        'depth'             => 1,
-                                        'container'         => 'nav',
-                                        'container_class'   => '',
-                                        'container_id'      => '',
+                                        'theme_location' => 'footer_left_menu',
+                                        'depth' => 1,
+                                        'container' => 'nav',
+                                        'container_class' => '',
+                                        'container_id' => '',
                                         'before' => '<i class="fas fa-chevron-right"></i>',
-                                        'menu_class'        => 'footer_ul_holder',
-                                        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                                        'walker'            => new WP_Bootstrap_Navwalker(),
+                                        'menu_class' => 'footer_ul_holder',
+                                        'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                                        'walker' => new WP_Bootstrap_Navwalker(),
                                     )
                                 );
                                 ?>
@@ -60,15 +60,15 @@
                                 <?php
                                 wp_nav_menu(
                                     array(
-                                        'theme_location'    => 'footer_right_menu',
-                                        'depth'             => 1,
-                                        'container'         => 'nav',
-                                        'container_class'   => '',
-                                        'container_id'      => '',
+                                        'theme_location' => 'footer_right_menu',
+                                        'depth' => 1,
+                                        'container' => 'nav',
+                                        'container_class' => '',
+                                        'container_id' => '',
                                         'before' => '<i class="fas fa-chevron-right"></i>',
-                                        'menu_class'        => 'footer_ul_holder',
-                                        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                                        'walker'            => new WP_Bootstrap_Navwalker(),
+                                        'menu_class' => 'footer_ul_holder',
+                                        'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                                        'walker' => new WP_Bootstrap_Navwalker(),
                                     )
                                 );
                                 ?>
@@ -133,5 +133,5 @@
         </form>
     </div>
 </div>
-<?php get_template_part( 'templates/components/calendar', '' );?>
+<?php get_template_part('templates/components/calendar', ''); ?>
 

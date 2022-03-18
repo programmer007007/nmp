@@ -1,4 +1,7 @@
-<div class="section-single-project">
+<?php
+$print = $args['index'] % 2 == 0 && $args['index'] == ($args['count'] - 1);
+?>
+<div class="section-single-project <?php echo is_front_page() ? ($print ? 'col-md-12 col-12' : 'col-md-6 col-12') : ''; ?>">
     <?php if (is_front_page()) {
         get_template_part('templates/single/partial', 'frontheader');
         ?>

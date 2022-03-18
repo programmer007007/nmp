@@ -11,16 +11,16 @@
         <?php
         $mainTitle = $pods_settings->display('page_video_main_title');
         $subTitle = $pods_settings->display('page_video_under_title');
-        if(!empty($mainTitle) || !empty($subTitle)){
-        ?>
-        <div class="first_message_holder">
-            <?php if(!empty($mainTitle)){ ?>
-            <h2 class="playfair text-center f1"><?php echo $mainTitle;?></h2>
-            <?php } ?>
-            <?php if(!empty($subTitle)){ ?>
-            <h4 class="opensan text-center f2"><?php echo $subTitle;?></h4>
-            <?php } ?>
-        </div>
+        if (!empty($mainTitle) || !empty($subTitle)) {
+            ?>
+            <div class="first_message_holder">
+                <?php if (!empty($mainTitle)) { ?>
+                    <h2 class="playfair text-center f1"><?php echo $mainTitle; ?></h2>
+                <?php } ?>
+                <?php if (!empty($subTitle)) { ?>
+                    <h4 class="opensan text-center f2"><?php echo $subTitle; ?></h4>
+                <?php } ?>
+            </div>
         <?php } ?>
     </div>
 </section>

@@ -9,11 +9,11 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <?php $images = explode(" ",$pods_settings->display("welcome_images"));?>
-                            <?php foreach($images as $image){?>
-                            <div class="swiper-slide">
-                                <img src="<?php echo $image;?>" />
-                            </div>
+                            <?php $images = explode(" ", $pods_settings->display("welcome_images")); ?>
+                            <?php foreach ($images as $image) { ?>
+                                <div class="swiper-slide">
+                                    <img src="<?php echo $image; ?>"/>
+                                </div>
                             <?php } ?>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -25,7 +25,9 @@
                 <div class="col-md-8 col-12 width_tab_100">
                     <div class="pt-3 welcome_content_holder">
 
-                        <h3 class="welcome_txt" data-aos="fade-down">WELCOME TO <span class="cmp_name"><?php echo strtoupper($pods_settings->display("company_name")); ?></span></h3>
+                        <h3 class="welcome_txt" data-aos="fade-down">WELCOME TO <span
+                                    class="cmp_name"><?php echo strtoupper($pods_settings->display("company_name")); ?></span>
+                        </h3>
                         <div class="welcome_dy_txt_holder" data-aos="fade-right">
                             <?php
                             $query = get_post($content->ID);
@@ -33,7 +35,8 @@
                             echo $content;
                             ?>
                         </div>
-                        <!--                        <img src="--><?php //echo get_template_directory_uri();?><!--/dist/img/logo-grayscale.png"/>-->
+                        <!--                        <img src="-->
+                        <?php //echo get_template_directory_uri();?><!--/dist/img/logo-grayscale.png"/>-->
                     </div>
                 </div>
             </div>

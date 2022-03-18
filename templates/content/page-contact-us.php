@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="text">
                                     <p><span>Phone:</span> <a
-                                                href="tel://<?php echo str_replace(" ","",$pods_settings->display('phone')); ?>"><?php echo $pods_settings->display('phone'); ?></a>
+                                                href="tel://<?php echo str_replace(" ", "", $pods_settings->display('phone')); ?>"><?php echo $pods_settings->display('phone'); ?></a>
                                     </p>
                                 </div>
                             </div>
@@ -95,7 +95,9 @@
                                     <i class="fa fa-paper-plane"></i>
                                 </div>
                                 <div class="text">
-                                    <p><span>Email:</span> <a href="mailto:<?php echo $pods_settings->display('email'); ?>"><?php echo $pods_settings->display('email'); ?></a></p>
+                                    <p><span>Email:</span> <a
+                                                href="mailto:<?php echo $pods_settings->display('email'); ?>"><?php echo $pods_settings->display('email'); ?></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +107,9 @@
                                     <i class="fa fa-globe"></i>
                                 </div>
                                 <div class="text">
-                                    <p><span>Website</span> <a href="//<?php echo $pods_settings->display('site'); ?>"><?php echo $pods_settings->display('site'); ?></a></p>
+                                    <p><span>Website</span> <a
+                                                href="//<?php echo $pods_settings->display('site'); ?>"><?php echo $pods_settings->display('site'); ?></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

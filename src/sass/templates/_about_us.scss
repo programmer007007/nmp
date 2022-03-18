@@ -76,23 +76,28 @@
 .common_page_wrapper {
   padding: 0;
 }
-#section-who-we-are{
-  padding-top: 4%;
+
+#section-who-we-are {
+  padding-top: 8%;
   width: 95%;
   margin: auto;
 }
-.font-12rem{
-  font-size:1.2rem;
+
+.font-12rem {
+  font-size: 1.2rem;
 }
-.who_are_are_txt_holder p{
+
+.who_are_are_txt_holder p {
   padding: 1%;
   //margin-bottom: 5%;
 }
+
 .whoweare_img {
   margin-bottom: 4%;
   border: 1px solid lightgray;
   padding: 2%;
 }
+
 #section-slider .first_message_holder {
 
 }
@@ -134,7 +139,7 @@
   #section-who-we-are {
     padding-top: 20%;
   }
-  .about_us_heading, .who_we_are_heading{
+  .about_us_heading, .who_we_are_heading {
     font-size: 2rem;
   }
 }

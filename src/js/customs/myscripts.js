@@ -22,6 +22,9 @@ $(document).ready(function ($) {
       shadowOffset: 20,
       shadowScale: 0.94
     },
+    autoplay: {
+      delay: 5000
+    },
     pagination: {
       el: '.swiper-pagination'
     },
@@ -29,6 +32,147 @@ $(document).ready(function ($) {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
+  });
+
+  new Swiper('.swiper_blog', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    grabCursor: true,
+    autoplay: {
+      delay: 5000
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+
+  new Swiper('.swiper_whyus', {
+    slidesPerView: 12,
+    spaceBetween: 5,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      }
+    },
+    autoplay: {
+      delay: 5000
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+
+  new Swiper('.swiper_demarcation', {
+    slidesPerView: 2,
+    spaceBetween: 5,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      }
+    },
+    autoplay: {
+      delay: 5000
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+  new Swiper('.swiper_deed_registration', {
+    slidesPerView: 2,
+    spaceBetween: 5,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      }
+    },
+    autoplay: {
+      delay: 5000
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+
+  $('.view_pdf').click(function () {
+    $('.preview_pdf').show();
+    $('#pdf_iframe').attr('src', $(this).attr('data-link'));
+  });
+
+  $('#hidePdfViewerBtn').click(function () {
+    $('.preview_pdf').hide();
+    $('#pdf_iframe').attr('src', '');
   });
 
   function addStyle (styles) {

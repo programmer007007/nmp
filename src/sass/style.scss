@@ -23,7 +23,8 @@
 
 /* purgecss start ignore */
 
-@import 'integrations/aos';  // required npm packages: 'aos'
+@import 'integrations/aos';
+// required npm packages: 'aos'
 // @import 'integrations/swiper';  // required npm package: 'swiper'
 
 // --- WP Core required styles ---
@@ -49,6 +50,7 @@
 @import "templates/mpl";
 @import "templates/blog";
 @import "templates/team";
+@import "templates/whyus";
 
 @import '../../node_modules/lightgallery/css/lightgallery-bundle.css';
 @import url('//fonts.cdnfonts.com/css/optima');
@@ -57,6 +59,7 @@
 /* purgecss end ignore */
 body {
   //background: #f9f9f9;
+  overflow-x: hidden;
 }
 
 .optima {
@@ -149,23 +152,38 @@ body {
   font-size: 1rem;
 }
 
+.swiper_blog {
+  .swiper-pagination {
+    position: relative;
+  }
+}
+
 .tax-list {
   width: 90%;
   margin: auto;
   margin-top: 3%;
 }
-.no-project{
+
+.no-project {
   font-size: 1.5rem;
   text-align: center;
   background: lightgray;
   padding: 2%;
 }
-.no-project a{
-  color:blue;
+
+.no-project a {
+  color: blue;
 }
-.no-project a:hover{
-  color:blue;
+
+.no-project a:hover {
+  color: blue;
   text-decoration: underline;
+}
+
+.light_bg {
+  background: #f9f9f9;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 1441px) {

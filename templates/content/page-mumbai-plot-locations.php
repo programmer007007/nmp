@@ -18,17 +18,24 @@
             <?php //var_dump($template_img);?>
             <div class="flex-grow-1" data-aos="fade-<?php
             if ($i % 2 == 0) {
-                echo "right";} else {echo "left";}$i++;
-             ?>">
+                echo "right";
+            } else {
+                echo "left";
+            }
+            $i++;
+            ?>">
                 <a class="location_lnk_wrp" href="<?php echo get_category_link($category->term_id); ?>">
-                    <div class="location_holder position-relative" style="background-image: url('<?php $item_img = isset($template_img["guid"]) ? $template_img["guid"] : '';
-                    echo $item_img; ?>');background-size: cover;background-size: 100% 100%; ">
+                    <div class="location_holder position-relative"
+                         style="background-image: url('<?php $item_img = isset($template_img["guid"]) ? $template_img["guid"] : '';
+                         echo $item_img; ?>');background-size: cover;background-size: 100% 100%; ">
                         <div class="black-overlay">
                         </div>
                         <div class="show_over">
-                            <div class="w-100 h-100 position-relative mt_Wrp"><div class="ov_wrp">View all our project of <?php echo $category->name;?></div></div>
+                            <div class="w-100 h-100 position-relative mt_Wrp">
+                                <div class="ov_wrp">View all our project of <?php echo $category->name; ?></div>
+                            </div>
                         </div>
-<!--                        <span class="htxt">--><?php //echo $category->name;?><!--</span>-->
+                        <!--                        <span class="htxt">--><?php //echo $category->name;?><!--</span>-->
                     </div>
                 </a>
             </div>

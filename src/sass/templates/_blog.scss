@@ -25,7 +25,6 @@
 }
 
 #section-blogs {
-  margin-top: 4%;
   margin-bottom: 3%;
 }
 
@@ -94,16 +93,53 @@
 }
 
 #page-wrapper {
-  margin-bottom: 5%;
+  border-bottom: 1px solid lightgrey;
 }
 
-#footer-simple{
-    #email-error {
-      font-size: 0.8rem;
-      color: #df3292;
-      padding-left: 1%;
-      text-transform: inherit;
-    }
+#footer-simple {
+  #email-error {
+    font-size: 0.8rem;
+    color: #df3292;
+    padding-left: 1%;
+    text-transform: inherit;
+  }
+}
+
+.blog_lbg {
+  margin-top: 5%;
+}
+
+.sub_text_holder {
+  width: 50%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3em;
+}
+
+.img_slider_holder {
+  overflow: hidden;
+}
+
+.right_arrow {
+  display: none;
+}
+
+.how_to_buy_img_holder {
+  position: absolute;
+  right: 0;
+  width: 41%;
+  top: 14%;
+}
+
+.section-how-to-buy-lght {
+  position: relative;
+}
+
+.page-id-24 {
+  #section-who-we-are {
+    padding-top: 3%;
+  }
 }
 
 @media only screen and (min-width: 1441px) {
@@ -116,6 +152,39 @@
 }
 
 @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .sub_latest_launch {
+    width: 90%;
+    margin-top: 10%;
+  }
+  .sub_text_holder {
+    width: 90%;
+    margin-top: 10%;
+  }
+  .wrp_blog a {
+    font-size: 0.8em;
+    line-break: anywhere;
+  }
+  // add right arrow after class font-awesome
+  .right_arrow {
+    display: none;
+    float: right;
+    position: absolute;
+    right: 12%;
+    font-size: 2rem;
+    color: lightgray;
+    margin-top: 15%;
+    z-index: 999;
+    background-color: black;
+    padding: 3px;
+    padding-left: 4px;
+  }
+  .how_to_buy_img_holder {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 425px) {

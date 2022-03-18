@@ -1,5 +1,8 @@
 #section-welcome {
   .welcome_wrapper {
+    background-color: #f9f9f9;
+    padding: 2%;
+
     .welcome_container {
       width: 80%;
       margin: auto;
@@ -27,20 +30,24 @@
     }
   }
 }
-.btn_read_more{
+
+.btn_read_more {
   text-decoration: none !important;
   display: table;
   margin-top: 10px;
   color: white !important;
 }
+
 .tax-location {
-  .section-single-project{
+  .section-single-project {
     border-bottom: 1px solid lightgray;
   }
 }
-.bo-1{
+
+.bo-1 {
   border: 1px solid lightgrey !important;
 }
+
 @media only screen and (min-width: 1441px) {
 }
 

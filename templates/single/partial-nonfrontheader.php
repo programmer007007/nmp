@@ -3,8 +3,9 @@ $google_map_data = get_post_meta(get_the_ID(), 'google_map_link')[0];
 ?>
 <div>
     <?php if (Stringy\Stringy::create($google_map_data)->contains('maps/embed')) { ?>
-    <iframe src='<?php echo $google_map_data;?>' height='800' style='width:100%;border:0;position:relative;' allowfullscreen='' loading='lazy'></iframe>
-    <?php };?>
+        <iframe src='<?php echo $google_map_data; ?>' height='800' style='width:100%;border:0;position:relative;'
+                allowfullscreen='' loading='lazy'></iframe>
+    <?php }; ?>
     <div class="pt_holder pt_holder_new">
         <a class="a_project_title"
            href="<?php echo get_permalink(get_the_ID()); ?>"><h2

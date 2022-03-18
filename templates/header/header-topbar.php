@@ -1,13 +1,13 @@
-<div id="header-topbar" class="navbar navbar-expand navbar-dark">  
-	  
-	<div class="container justify-content-center">
+<div id="header-topbar" class="navbar navbar-expand navbar-dark">
 
-		<?php
+    <div class="container justify-content-center">
 
-		get_template_part( 'templates/components/socialicons', '' );
+        <?php
 
-		?>
-		
-	</div>
+        get_template_part('templates/components/socialicons', '');
+
+        ?>
+
+    </div>
 
 </div>

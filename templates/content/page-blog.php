@@ -1,4 +1,4 @@
-<div class="col-md-3 col-12">
+<div class="<?php echo is_front_page() ? '' : 'col-md-3 col-12'; ?>">
     <div class="w-100 m_wrp_blog_holder">
         <div class="wrp_blog" style="
                 background-size: cover !important;
@@ -8,7 +8,9 @@
                 height: 27vh;
                 ">
             <div class="overlay">
-                <div class="text"><a href="<?php the_permalink(get_the_ID()); ?>"><?php echo wp_trim_words( the_title(null,null,false), 10, '...' ) ?></a></div>
+                <div class="text"><a
+                            href="<?php the_permalink(get_the_ID()); ?>"><?php echo wp_trim_words(the_title(null, null, false), 10, '...') ?></a>
+                </div>
             </div>
         </div>
     </div>
