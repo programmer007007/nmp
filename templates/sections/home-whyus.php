@@ -74,11 +74,11 @@ if ($query->post_count) {
         ?>
         <div class="light_bg">
             <section id="section-demarcation" class="mt-5">
-                <h3 class="whyus"><span class="heading_bottom" data-aos="fade-down">DEMARCATION</span></h3>
+                <h3 class="whyus"><span class="heading_bottom">DEMARCATION</span></h3>
                 <?php if ($pods_settings->display("demarcation_text")) { ?>
                     <div class="sub_text_holder"><?php echo $pods_settings->display("demarcation_text"); ?></div>
                 <?php } ?>
-                <div class="img_slider_holder mt-5" data-aos="fade-up">
+                <div class="img_slider_holder mt-5">
                     <i class="fa fa-angle-right right_arrow" aria-hidden="true"></i>
                     <div class="swiper_demarcation" >
                         <div class="swiper-wrapper">
@@ -112,11 +112,11 @@ if ($query->post_count) {
     if ($pods_settings->display('hide_deed_registration') == "No") {
         ?>
         <section id="section-deed-registration" class="mt-5">
-            <h3 class="whyus"><span class="heading_bottom" data-aos="fade-down">DEED REGISTRATION</span></h3>
+            <h3 class="whyus"><span class="heading_bottom">DEED REGISTRATION</span></h3>
             <?php if ($pods_settings->display("deed_registration_text")) { ?>
                 <div class="sub_text_holder"><?php echo $pods_settings->display("deed_registration_text"); ?></div>
             <?php } ?>
-            <div class="img_slider_holder mt-5" data-aos="fade-up">
+            <div class="img_slider_holder mt-5">
                 <i class="fa fa-angle-right right_arrow" aria-hidden="true"></i>
                 <div class="swiper_deed_registration">
                     <div class="swiper-wrapper">
