@@ -1,18 +1,20 @@
 <?php $pods_settings = pods('website_settings');
 $how_to_buy_content = $pods_settings->field('how_to_buy') ?>
 <?php if (!empty($how_to_buy_content)): ?>
-    <div class="light_bg section-how-to-buy-lght">
-        <section id="section-how-to-buy" class="mt-5">
-            <h3 class="whyus"><span class="heading_bottom" data-aos="fade-down">How to buy?</span></h3>
-            <div class="mt-5" data-aos="fade-up">
-                <?php echo $how_to_buy_content; ?>
+    <?php if ($pods_settings->display('hide_how_to_buy') == 'No') { ?>
+        <div class="light_bg section-how-to-buy-lght">
+            <section id="section-how-to-buy" class="mt-5">
+                <h3 class="whyus"><span class="heading_bottom" data-aos="fade-down">How to buy?</span></h3>
+                <div class="mt-5" data-aos="fade-up">
+                    <?php echo $how_to_buy_content; ?>
+                </div>
+            </section>
+            <div class="how_to_buy_img_holder">
+                <img src="<?php echo get_template_directory_uri() . '/dist/img/relation.png' ?>"
+                     class="w-100">
             </div>
-        </section>
-        <div class="how_to_buy_img_holder">
-            <img src="<?php echo get_template_directory_uri() . '/dist/img/relation.png' ?>"
-                 class="w-100">
         </div>
-    </div>
+    <?php } ?>
 <?php endif; ?>
 <?php
 $query = new WP_Query(array(
@@ -80,7 +82,7 @@ if ($query->post_count) {
                 <?php } ?>
                 <div class="img_slider_holder mt-5">
                     <i class="fa fa-angle-right right_arrow" aria-hidden="true"></i>
-                    <div class="swiper_demarcation" >
+                    <div class="swiper_demarcation">
                         <div class="swiper-wrapper">
                             <?php
                             while ($query->have_posts()) {

@@ -6,7 +6,9 @@
         <?php //get_template_part('templates/sections/home', 'aboutus'); ?>
         <?php get_template_part('templates/sections/home', 'whatwestandfor'); ?>
         <?php get_template_part('templates/sections/home', 'properties'); ?>
-        <?php get_template_part('templates/sections/home', 'testimonial'); ?>
+        <?php if ($glb_pods_settings->display('hide_reviews') == 'No') { ?>
+            <?php get_template_part('templates/sections/home', 'testimonial'); ?>
+        <?php } ?>
         <?php get_template_part('templates/sections/home', 'whyus'); ?>
         <?php get_template_part('templates/sections/home', 'contactus'); ?>
         <?php if ($glb_pods_settings->display('hide_blogs') == 'No') { ?>
