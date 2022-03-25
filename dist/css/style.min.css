@@ -13867,6 +13867,10 @@ body {
   padding-bottom: 5%;
 }
 
+#toplevel_page_aiowpsec {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .first_message_holder {
     top: 25%;
